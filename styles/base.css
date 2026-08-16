@@ -1,4 +1,8 @@
 :root {
+    /* element sizing */
+    --max-content-width: 90rem;
+    --min-header-height: 3rem;
+
     /* ---- color: raw palette (a variation on primaries) ---- */
     --color-red-orange: #E4462A;
     --color-deep-lyons-blue: #1E2A5E;
@@ -38,12 +42,19 @@ body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     margin: 0;
     color: var(--color-near-black);
+    min-height: 100vh;
+    background-color: var(--color-blue-tint);
+}
+.upper {
+    background-color: var(--color-off-white);
+    display: flex;
+    justify-content: center;
 }
 .header-section {
     padding: var(--space-xl) var(--space-lg);
     display: flex;
     justify-content: center;
-    background-color: var(--color-off-white);
+    max-width: var(--max-content-width);
 }
 .site-header {
     display: flex;
@@ -77,4 +88,26 @@ body {
     font-weight: bold;
     border-radius: var(--radius-pill);
     margin-top: var(--space-sm);
+}
+.right-content {
+    padding: 0 var(--space-xxl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.explainer {
+    font-size: var(--font-size-h5);
+}
+.swapper-container {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+.swapper-button {
+    margin: 0 var(--space-xs);
+    padding: var(--space-xs) var(--space-sm);
+    width: 200px;
+    border: none;
+    font-size: var(--font-size-h6);
+    border-radius: var(--radius-pill);
 }
