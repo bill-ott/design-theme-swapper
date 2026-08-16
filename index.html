@@ -11,51 +11,30 @@
     <link rel="stylesheet" href="styles/theme-8bit.css">
 </head>
 <body>
-    <header class="site-header">
-        <nav class="site-nav">
-            <span class="site-nav__logo">Theme Swapper</span>
-            <a href="#" class="site-nav__link">About</a>
-        </nav>
-    </header>
     <section class="header-section">
-        <h1 class="site-title">Theme Swapper</h1>
-        <p class="intro">
-            Theme Swapper is a portfolio project I'm making to try out different web design aesthetics.
-            Click a tile below to test out the various styles.
-        </p>
-        <div class="swapper-container">
-            <button class="swapper" data-theme-target="aero">Frutiger Aero</button>
-            <button class="swapper" data-theme-target="brutalism">Brutalism</button>
-            <button class="swapper" data-theme-target="8bit">8 Bit</button>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-            <!-- signature shape/mark goes here -->
-        </div>
-    </section>
-    <section class="content-wrapper">
-        <h2>Design Style</h2>
-        <p>Info about each design style will live here.</p>
-    </section>
-    <section class="showcase">
-        <h2>Component Preview</h2>
-        <div class="card-grid">
-            <article class="card">
-                <h3>Element One</h3>
-                <p>Placeholder text to test type and spacing.</p>
-            </article>
-            <article class="card">
-                <h3>Element Two</h3>
-                <p>Placeholder text to test type and spacing.</p>
-            </article>
-            <article class="card">
-                <h3>Element Three</h3>
-                <p>Placeholder text to test type and spacing.</p>
-            </article>
+        <header class="site-header">
+            <h1 class="site-title">
+                <span class="title-word first">Design</span>
+                <span class="title-word second">Theme</span>
+                <span class="title-word third">Swapper</span>
+            </h1>
+            <p class="author">by Bill Ott</p>
+        </header>
+        <div class="explainer">
+            <p class="intro">
+                Design Theme Swapper is a simple project I made to try designing for various web aesthetics.
+                Each style below reworks the same page with different colors, type, shapes, and spacing. Click a button to
+                swap between them and see how much a shared structure can change with a different
+                visual language on top.
+            </p>
+            <p>Check them out to learn more about each style.</p>
+            <div class="swapper-container">
+                <button class="swapper-button" data-theme-target="aero">Frutiger Aero</button>
+                <button class="swapper-button" data-theme-target="brutalism">Brutalism</button>
+                <button class="swapper-button" data-theme-target="8bit">8 Bit</button>
+            </div>
         </div>
     </section>
-    <footer class="site-footer">
-        <p>Built as a design exercise.</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>

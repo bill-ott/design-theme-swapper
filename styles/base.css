@@ -1,13 +1,80 @@
-.outer {
-    display: flex;
-    border: solid 1px red;
-    height: 200px;
-    width: 200px;
-    align-items: center;
-    justify-content: space-around;
+:root {
+    /* ---- color: raw palette (a variation on primaries) ---- */
+    --color-red-orange: #E4462A;
+    --color-deep-lyons-blue: #1E2A5E;
+    --color-golden-yellow: #F4B400;
+    --color-off-white: #F7F4EC;
+    --color-near-black: #1A1610;
+    --color-blue-tint: #3A4A8C;
+    
+    /* font sizes (based on Major Third scale) */
+    --font-size-h1: 3.815rem;
+    --font-size-h2: 3.052rem;
+    --font-size-h3: 2.441rem;
+    --font-size-h4: 1.952rem;
+    --font-size-h5: 1.562rem;
+    --font-size-h6: 1.25rem;
+    --font-size-p: 1rem;
+    --font-size-sm: 0.8rem;
+    --font-size-xs: 0.64rem;
+
+    /* spacing */
+    --space-xxs:  0.1rem;
+    --space-xs:  0.5rem;
+    --space-sm:  1rem;
+    --space-md:  2rem;
+    --space-lg:  3rem;
+    --space-xl:  5rem;
+    --space-xxl:  9rem;
+    --space-xxxl:  11rem;
+    --space-char: 1ch;   
+
+    /* border radius */
+    --radius-base: 0.375rem;
+    --radius-pill: 1.25rem;
 }
-.inner {
-    height: 50%;
-    width: 50%;
-    border: solid 1px green;
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    color: var(--color-near-black);
+}
+.header-section {
+    padding: var(--space-xl) var(--space-lg);
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-off-white);
+}
+.site-header {
+    display: flex;
+    flex-direction: column;
+}
+.site-title {
+    color: var(--color-red-orange);
+    font-size: var(--font-size-h1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+.title-word {
+    background-color: var(--color-deep-lyons-blue);
+    padding: var(--space-sm);
+    border-radius: var(--radius-pill);
+    margin-top: var(--space-xs);
+}
+.first {
+    margin-left: var(--space-lg);
+}
+.second {
+    margin-left: var(--space-xxl);
+}
+.author {
+    color: var(--color-deep-lyons-blue);
+    background-color: var(--color-golden-yellow);
+    margin: 0 0 0 auto;
+    padding: var(--space-xs) var(--space-sm);
+    font-weight: bold;
+    border-radius: var(--radius-pill);
+    margin-top: var(--space-sm);
 }
