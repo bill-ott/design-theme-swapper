@@ -140,7 +140,7 @@ body {
         margin-left: 0;
     }
 }
-@media (max-width: 30rem) {
+@media (max-width: 30rem) { /* stack buttons in grid */
     .swapper-container {
         grid-template-columns: 1fr;
     }
