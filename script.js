@@ -3,7 +3,7 @@ const themeContent = {
         overview: `The default style is my own. I like simplicity, a cohesive color palette, and softer edges (including font). I prefer when content is organized and flows well.
         I'm a Front-End Developer and like to dabble in web design via projects like this. It's not only great practice, it's a great outlet.`,
         features: [
-            { title: 'Function over form', description: 'Each element should have a purpose. HTML, CSS, and JS are tidy and organized. Modularity is king.' },
+            { title: 'Function over form', description: 'Each element should have a purpose. HTML, CSS, and JS are tidy and organized. Interactivity when it makes sense. Modularity is king.' },
             { title: 'Cohesive color palette', description: `My designs lean heavily on a specific color palette. If I don't have one in mind, I draw inspiration from books on design, pictures I take, or other websites I love.` },
             { title: 'Limited visual clutter', description: `Sans serif fonts, 
                 mild to heavily rounded edges, content that flows from top to bottom.
