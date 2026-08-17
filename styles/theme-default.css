@@ -16,6 +16,7 @@
     --color-bg: var(--color-blue-tint);
     --color-fg: var(--color-near-black);
     --color-header-bg: var(--color-off-white);
+    --color-content-bg: var(--color-deep-lyons-blue);
 
     --color-title-fg: var(--color-red-orange);
     --color-title-bg: var(--color-deep-lyons-blue);
