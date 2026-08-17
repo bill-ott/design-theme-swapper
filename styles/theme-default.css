@@ -1,7 +1,6 @@
 [data-theme="default"] {
     /* fonts */
-    --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    --font-display: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-family: "Trebuchet MS", "Lucida Grande", sans-serif;
     --font-weight-bold: bold;
 
     /* font sizes */
