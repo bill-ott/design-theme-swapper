@@ -1,6 +1,7 @@
 :root {
     /* element sizing */
     --max-content-width: 90rem;
+    --max-text-width: 60rem;
 
     /* font sizes (based on Major Third scale) */
     --font-size-h1: 3.815rem;
@@ -137,25 +138,30 @@ body {
     padding-bottom: var(--space-md);
 }
 .style-heading {
+    font-family: var(--font-display);
+    font-size: var(--font-size-style-heading);
+    text-transform: var(--heading-text-transform);
     color: var(--color-title-fg);
-    font-size: var(--font-size-h2);
-    text-transform: uppercase;
 }
 .sub-section {
-    max-width: var(--max-content-width);
+    max-width: var(--max-text-width);
     margin: 0 var(--space-lg);
     display: flex;
     flex-direction: column;
 }
 .sub-section-heading {
+    font-family: var(--font-display);
+    font-size: var(--font-size-sub-heading);
+    text-transform: var(--heading-text-transform);
     color: var(--color-sub-title-fg);
-    font-size: var(--font-size-h4);
     text-align: center;
 }
 .overview {
     background-color: var(--color-overview-bg);
-    padding: var(--space-md);
+    border: var(--border-card);
     border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    padding: var(--space-md);
     margin: var(--space-sm);
 }
 .features-list {
@@ -165,9 +171,11 @@ body {
     padding: 0;
 }
 .features-item {
-    border-radius: var(--radius-card);
-    min-height: 10rem;
     background-color: var(--color-features-bg);
+    border: var(--border-card);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    min-height: var(--features-item-min-height);
     text-align: center;
     margin: var(--space-sm);
     padding: var(--space-sm);
@@ -177,11 +185,12 @@ body {
 }
 .resources-link {
     color: var(--color-link);
-    text-decoration: none;
+    text-decoration: var(--text-decoration-link);
     font-size: var(--font-size-h6);
 }
 .resources-link:hover {
-    color: color-mix(in srgb, var(--color-link) 65%, transparent);
+    color: var(--color-link-hover);
+    text-decoration: var(--text-decoration-link-hover);
 }
 @media (max-width: 68rem) { /* stack layout */
     .header-wrapper {

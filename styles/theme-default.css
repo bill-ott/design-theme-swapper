@@ -4,6 +4,10 @@
     --font-display: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     --font-weight-bold: bold;
 
+    /* font sizes */
+    --font-size-style-heading: var(--font-size-h2);
+    --font-size-sub-heading: var(--font-size-h4);
+
     /* raw palette (a variation on primaries) */
     --color-red-orange: #E4462A;
     --color-deep-lyons-blue: #1E2A5E;
@@ -30,6 +34,7 @@
     --color-overview-bg: var(--color-off-white);
     --color-features-bg: var(--color-off-white);
     --color-link: var(--color-red-orange);
+    --color-link-hover: color-mix(in srgb, var(--color-link) 65%, transparent);
 
     /* shape */
     --radius-title: 1.25rem;
@@ -37,6 +42,8 @@
     --radius-button: 5rem;
     --radius-card: 1.25rem;
     --border-button: none;
+    --border-card: none;
+    --features-item-min-height: 10rem;
 
     /* depth */
     --shadow-title: 0 1px 2px rgba(0, 0, 0, 0.06);
@@ -47,6 +54,7 @@
         0 4px 8px rgba(0, 0, 0, 0.12),
         0 10px 24px rgba(0, 0, 0, 0.18);
     --shadow-button-active: 0 2px 4px rgba(0, 0, 0, 0.10);
+    --shadow-card: none;
 
     /* motion */
     --transform-button-hover: translateY(-2px);
@@ -54,7 +62,10 @@
 
     /* treatments */
     --button-text-transform: uppercase;
+    --heading-text-transform: uppercase;
     --list-style-type: none;
+    --text-decoration-link: none;
+    --text-decoration-link-hover: none;
 
     /* focus */
     --outline-focus: 2px solid var(--color-golden-yellow);
