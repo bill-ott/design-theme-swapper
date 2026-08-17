@@ -38,6 +38,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--color-header-bg);
+    width: 100%;
 }
 .header-wrapper {
     display: flex;
