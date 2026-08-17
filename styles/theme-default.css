@@ -1,70 +1,62 @@
 [data-theme="default"] {
-    /* fonts */
+    /* font */
     --font-family: "Trebuchet MS", "Lucida Grande", sans-serif;
-    --font-weight-bold: bold;
 
-    /* font sizes */
-    --font-size-style-heading: var(--font-size-h2);
-    --font-size-sub-heading: var(--font-size-h4);
-
-    /* raw palette (a variation on primaries) */
+    /* raw palette */
     --color-red-orange: #E4462A;
     --color-deep-lyons-blue: #1E2A5E;
     --color-golden-yellow: #F4B400;
     --color-off-white: #F7F4EC;
     --color-near-black: #1A1610;
-    --color-blue-tint: #3A4A8C;
+    --color-twilight-blue: #3A4A8C;
 
     /* semantic color */
-    --color-bg: var(--color-blue-tint);
-    --color-fg: var(--color-near-black);
-    --color-header-bg: var(--color-off-white);
-    --color-content-bg: var(--color-deep-lyons-blue);
-    --color-title-fg: var(--color-red-orange);
-    --color-title-bg: var(--color-deep-lyons-blue);
-    --color-author-fg: var(--color-deep-lyons-blue);
-    --color-author-bg: var(--color-golden-yellow);
-    --color-explainer-fg: var(--color-near-black);
-    --color-button-fg: var(--color-golden-yellow);
-    --color-button-bg: var(--color-blue-tint);
-    --color-button-fg-hover: var(--color-deep-lyons-blue);
-    --color-button-bg-hover: var(--color-golden-yellow);
-    --color-sub-title-fg: var(--color-golden-yellow);
-    --color-overview-bg: var(--color-off-white);
-    --color-features-bg: var(--color-off-white);
-    --color-link: var(--color-red-orange);
-    --color-link-hover: color-mix(in srgb, var(--color-link) 65%, transparent);
+    --color-bg-body: var(--color-off-white);
+    --color-text-body: var(--color-near-black);
+    --color-bg-header: var(--color-off-white);
+    --color-bg-title: var(--color-deep-lyons-blue);
+    --color-text-title: var(--color-red-orange);
+    --color-bg-author: var(--color-golden-yellow);
+    --color-text-author: var(--color-deep-lyons-blue);
+    --color-bg-button: var(--color-twilight-blue);
+    --color-text-button: var(--color-golden-yellow);
+    --color-bg-button-hover: var(--color-golden-yellow);
+    --color-text-button-hover: var(--color-deep-lyons-blue);
+    --color-bg-content: var(--color-deep-lyons-blue);
+    --color-text-style-heading: var(--color-red-orange);
+    --color-text-sub-title: var(--color-golden-yellow);
+    --color-text-overview: var(--color-off-white);
+    --color-bg-features: var(--color-off-white);
+    --color-text-link: var(--color-red-orange);
+    --color-text-link-hover: color-mix(in srgb, var(--color-text-link) 65%, transparent);
 
     /* shape */
-    --radius-title: 1.25rem;
+    --max-width-header-wrapper: var(--max-width-content);
+    --radius-title-word: 1.25rem;
     --radius-author: 1.25rem;
-    --radius-button: 5rem;
-    --radius-card: 1.25rem;
+    --max-width-right-content: 40rem;
+    --radius-button: 3rem;
     --border-button: none;
-    --border-card: none;
-    --features-item-min-height: 10rem;
-    --right-content-max-width: 40rem;
-    --header-wrapper-max-width: var(--max-content-width);
+    --radius-features-card: 1.25rem;
+    --min-height-features-card: 10rem;
 
     /* depth */
     --shadow-title: 0 1px 2px rgba(0, 0, 0, 0.06);
-    --shadow-button:
-        0 2px 4px rgba(0, 0, 0, 0.10),
-        0 6px 16px rgba(0, 0, 0, 0.14);
-    --shadow-button-hover:
-        0 4px 8px rgba(0, 0, 0, 0.12),
-        0 10px 24px rgba(0, 0, 0, 0.18);
+    --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.10), 0 6px 16px rgba(0, 0, 0, 0.14);
+    --shadow-button-hover: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 24px rgba(0, 0, 0, 0.18);
     --shadow-button-active: 0 2px 4px rgba(0, 0, 0, 0.10);
-    --shadow-card: none;
+    --shadow-features-card: none;
 
     /* motion */
     --transform-button-hover: translateY(-2px);
     --transform-button-active: translateY(0);
 
     /* treatments */
-    --button-text-transform: uppercase;
-    --heading-text-transform: uppercase;
-    --list-style-type: none;
+    --text-transform-button: uppercase;
+    --text-transform-style-heading: uppercase;
+    --text-transform-sub-section-heading: uppercase;
+    --list-style-features-list: none;
+    --list-style-resources-list: none;
     --text-decoration-link: none;
     --text-decoration-link-hover: none;
 
@@ -72,13 +64,15 @@
     --outline-focus: 2px solid var(--color-golden-yellow);
 
     /* spacing */
-    --header-margin: 0;
-    --header-wrapper-padding: var(--space-xl) var(--space-lg) var(--space-md);
-    --title-word-padding: var(--space-sm);
-    --title-word-1-margin-left: min(var(--space-lg), 8vw);
-    --title-word-2-margin-left: min(var(--space-xxl), 20vw);
-    --right-content-margin-left: var(--space-xl);
+    --margin-header: 0;
+    --padding-header-wrapper: var(--space-xl) var(--space-lg) var(--space-md);
+    --padding-title-word: var(--space-sm);
+    --margin-left-title-word-1: min(var(--space-lg), 8vw);
+    --margin-left-title-word-2: min(var(--space-xxl), 20vw);
+    --margin-left-right-content: var(--space-xl);
+    --marginsub-section: 0 var(--space-sm);
+    --padding-overview: var(--space-sm);
 
-    /* misc */
-    --site-title-flex-direction: column;
+    /* orientation */
+    --flex-direction-site-title: column;
 }

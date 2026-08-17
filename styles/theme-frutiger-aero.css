@@ -1,13 +1,8 @@
 [data-theme="frutiger-aero"] {
-    /* fonts */
+    /* font */
     --font-family: "Segoe UI", "Noto Sans", Avenir, sans-serif;
-    --font-weight-bold: bold;
 
-    /* font sizes */
-    --font-size-style-heading: var(--font-size-h2);
-    --font-size-sub-heading: var(--font-size-h4);
-
-    /* Green family */
+    /* raw palette */
     --color-lime-green: #9fe11d;
     --color-lime-green-light: #ccff7c;
     --color-lime-green-dark: #6b8f25;
@@ -15,57 +10,38 @@
     --color-mint-pale: #c7f3d0;
     --color-lime-cream: #f1ffcd;
     --color-golden-yellow: #ffc933;
-
-    /* Blue family */
     --color-sky-blue: #84cdec;
     --color-sky-blue-bright: #38abe4;
     --color-sky-pale: #c9eeff;
     --color-sky-mist: #d7f0f7;
-
-    /* Neutral */
     --color-white: #ffffff;
     --color-silver: #E6E6E6;
-
-    /* Glass & chrome */
     --color-glass-white: rgba(255, 255, 255, 0.35);
     --color-chrome-gray: #c8d3d6;
     --color-chrome-gray-dark: #67696a;
 
     /* semantic color */
-    --color-bg: var(--color-sky-pale);
-    --color-fg: var(--color-forest-green);
-    --color-header-bg: var(--color-mint-pale);
-    --color-header-wrapper-bg: var(--color-chrome-gray-dark);
-    --color-content-bg: var(--color-sky-blue);
-    --color-title-fg: var(--color-silver);
-    --color-author-fg: var(--color-silver);
-    --color-explainer-fg: var(--color-silver);
-    --color-button-fg: var(--color-golden-yellow);
-    --color-button-bg: var(--color-sky-pale);
-    --color-button-fg-hover: var(--color-sky-blue);
-    --color-button-bg-hover: var(--color-golden-yellow);
-    --color-sub-title-fg: var(--color-golden-yellow);
-    --color-overview-bg: var(--color-lime-cream);
-    --color-features-bg: var(--color-lime-cream);
-    --color-link: var(--color-lime-green);
-    --color-link-hover: color-mix(in srgb, var(--color-link) 65%, transparent);
+    --color-bg-body: var(--color-sky-pale);
+    --color-text-body: var(--color-silver);
+    --color-bg-header-wrapper: var(--color-chrome-gray-dark);
+    --color-text-style-heading: var(--color-lime-green-dark);
+    --color-bg-sub-section: var(--color-chrome-gray-dark);
+    --color-bg-features: var(--color-lime-cream);
+    --color-text-link: var(--color-lime-green);
+    --color-text-link-hover: color-mix(in srgb, var(--color-text-link) 65%, transparent);
 
     /* shape */
     --radius-header-wrapper: 2.5rem;
-    --radius-button: 5rem;
+    --radius-button: 3rem;
     --radius-card: 1.25rem;
     --border-button: none;
     --border-card: none;
-    --features-item-min-height: 10rem;
-    --header-wrapper-max-width: 60rem;
+    --min-height-features-item: 10rem;
+    --max-width-header-wrapper: var(--max-width-content-narrow);
 
     /* depth */
-    --shadow-button:
-        0 2px 4px rgba(0, 0, 0, 0.10),
-        0 6px 16px rgba(0, 0, 0, 0.14);
-    --shadow-button-hover:
-        0 4px 8px rgba(0, 0, 0, 0.12),
-        0 10px 24px rgba(0, 0, 0, 0.18);
+    --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.10), 0 6px 16px rgba(0, 0, 0, 0.14);
+    --shadow-button-hover: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 24px rgba(0, 0, 0, 0.18);
     --shadow-button-active: 0 2px 4px rgba(0, 0, 0, 0.10);
     --shadow-card: none;
 
@@ -74,9 +50,8 @@
     --transform-button-active: translateY(0);
 
     /* treatments */
-    --button-text-transform: uppercase;
-    --heading-text-transform: uppercase;
-    --list-style-type: none;
+    --list-style-features-list: none;
+    --list-style-resources-list: none;
     --text-decoration-link: none;
     --text-decoration-link-hover: none;
 
@@ -84,10 +59,12 @@
     --outline-focus: 2px solid var(--color-golden-yellow);
 
     /* spacing */
-    --header-wrapper-margin: var(--space-md);
-    --header-wrapper-padding: var(--space-md);
-    --title-word-padding: 0 var(--space-xs);
+    --margin-header-wrapper: var(--space-sm);
+    --padding-header-wrapper: var(--space-md);
+    --padding-title-word: 0 var(--space-xs);
+    --margin-sub-section-heading: var(--space-sm);
+    --margin-sub-section: var(--space-sm);
 
-    /* misc */
-    --header-wrapper-flex-direction: column;
+    /* orientation */
+    --flex-direction-header-wrapper: column;
 }
