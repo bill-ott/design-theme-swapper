@@ -32,6 +32,8 @@ body {
     min-height: 100vh;
     font-family: var(--font-body);
     color: var(--color-fg);
+    display: flex;
+    flex-direction: column;
 }
 .header-section {
     display: flex;
@@ -44,7 +46,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: var(--max-content-width);
-    padding: var(--space-xl) var(--space-lg);
+    padding: var(--space-xl) var(--space-lg) var(--space-md);
 }
 .site-header {
     display: flex;
@@ -84,26 +86,24 @@ body {
     width: 100%;
     max-width: 40rem;
     min-width: 0;
-    padding: 0 var(--space-lg);
+    margin-left: var(--space-xl);
 }
 .explainer {
     font-size: clamp(var(--font-size-h6), 3vw, var(--font-size-h5));
 }
 .swapper-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xs);
     margin-top: var(--space-md);
 }
 .swapper-button {
-    flex: 1 1 12rem;
-    max-width: 250px;
     padding: var(--space-sm) var(--space-md);
     font-family: var(--font-body);
     font-size: var(--font-size-p);
     font-weight: var(--font-weight-bold);
     text-transform: var(--button-text-transform);
+    white-space: nowrap;
     color: var(--color-button-fg);
     background-color: var(--color-button-bg);
     border: var(--border-button);
@@ -128,13 +128,20 @@ body {
 }
 .content-section {
     background-color: var(--color-content-bg);
-    height: 100%;
-    width: 100%;
+    flex: 1;
     min-height: 50vh;
 }
 @media (max-width: 68rem) { /* stack layout */
     .header-wrapper {
         flex-direction: column;
         padding-top: var(--space-md);
+    }
+    .right-content {
+        margin-left: 0;
+    }
+}
+@media (max-width: 30rem) {
+    .swapper-container {
+        grid-template-columns: 1fr;
     }
 }
