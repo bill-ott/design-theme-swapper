@@ -1,5 +1,6 @@
 const themeContent = {
     default: {
+        name: 'Default',
         overview: `The default style is my own.
             I like simplicity, a cohesive color palette, and softer edges (including font).
             I prefer when content is organized and flows well.
@@ -30,6 +31,7 @@ const themeContent = {
         ],
     },
     'frutiger-aero': {
+        name: 'Frutiger Aero',
         overview: `Frutiger Aero is the optimistic tech aesthetic of roughly 2004 to 2013.
             Think glossy buttons, water droplets, and a lot of sky blue and lime green.
             It's what Windows Vista desktop images and Nintendo DS and Wii marketing might fall under.
@@ -72,7 +74,7 @@ function renderContent(theme) {
     const content = themeContent[theme];
     if (!content) return;
 
-    document.querySelector('.style-heading').textContent = theme;
+    document.querySelector('.style-heading').textContent = content.name;
     document.querySelector('.overview').textContent = content.overview;
 
     const featuresList = document.querySelector('.features-list');

@@ -150,10 +150,11 @@ body {
 .sub-section {
     max-width: var(--max-width-content);
     margin: var(--margin-sub-section);
+    padding: var(--space-xs);
     display: flex;
     flex-direction: column;
     background-color: var(--color-bg-sub-section);
-    border-radius: var(--radius-header-wrapper);
+    border-radius: var(--radius-sub-section);
 }
 .sub-section-heading {
     font-family: var(--font-display);
@@ -172,10 +173,11 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style-type: var(--list-style-features-list);
-    padding: 0;
+    padding: var(--space-xs);
+    margin: 0;
 }
 .features-item {
-    background-color: var(--color-bg-features);
+    background-color: var(--color-bg-features-card);
     border-radius: var(--radius-features-card);
     box-shadow: var(--shadow-features-card);
     min-height: var(--min-height-features-card);

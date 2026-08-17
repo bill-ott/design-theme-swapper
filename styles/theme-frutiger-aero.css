@@ -26,14 +26,15 @@
     --color-bg-header-wrapper: var(--color-chrome-gray-dark);
     --color-text-style-heading: var(--color-lime-green-dark);
     --color-bg-sub-section: var(--color-chrome-gray-dark);
-    --color-bg-features: var(--color-lime-cream);
+    --color-bg-features-card: var(--color-glass-white);
     --color-text-link: var(--color-lime-green);
     --color-text-link-hover: color-mix(in srgb, var(--color-text-link) 65%, transparent);
 
     /* shape */
     --radius-header-wrapper: 2.5rem;
     --radius-button: 3rem;
-    --radius-card: 1.25rem;
+    --radius-sub-section: 2.5rem;
+    --radius-features-card: 1rem;
     --border-button: none;
     --border-card: none;
     --min-height-features-item: 10rem;
