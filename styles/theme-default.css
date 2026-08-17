@@ -43,6 +43,8 @@
     --border-button: none;
     --border-card: none;
     --features-item-min-height: 10rem;
+    --right-content-max-width: 40rem;
+    --header-wrapper-max-width: var(--max-content-width);
 
     /* depth */
     --shadow-title: 0 1px 2px rgba(0, 0, 0, 0.06);
@@ -68,4 +70,15 @@
 
     /* focus */
     --outline-focus: 2px solid var(--color-golden-yellow);
+
+    /* spacing */
+    --header-margin: 0;
+    --header-wrapper-padding: var(--space-xl) var(--space-lg) var(--space-md);
+    --title-word-padding: var(--space-sm);
+    --title-word-1-margin-left: min(var(--space-lg), 8vw);
+    --title-word-2-margin-left: min(var(--space-xxl), 20vw);
+    --right-content-margin-left: var(--space-xl);
+
+    /* misc */
+    --site-title-flex-direction: column;
 }
