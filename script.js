@@ -3,15 +3,15 @@ const themeContent = {
         overview: `The default style is my own. I like simplicity, a cohesive color palette, and softer edges (including font). I prefer when content is organized and flows well.
         I'm a Front-End Developer and like to dabble in web design via projects like this. It's not only great practice, it's a great outlet.`,
         features: [
-            { title: 'Function over form', description: 'Each element should have a purpose. HTML, CSS, and JS are tidy and organized.' },
+            { title: 'Function over form', description: 'Each element should have a purpose. HTML, CSS, and JS are tidy and organized. Modularity is king.' },
             { title: 'Cohesive color palette', description: `My designs lean heavily on a specific color palette. If I don't have one in mind, I draw inspiration from books on design, pictures I take, or other websites I love.` },
-            { title: 'Limit visual clutter', description: `Sans serif fonts, 
+            { title: 'Limited visual clutter', description: `Sans serif fonts, 
                 mild to heavily rounded edges, content that flows from top to bottom.
                 Basically I want to minimize how much my eyes are jumping around while reading a page.` },
         ],
         resources: [
-            { label: 'A Dictionary of Color Combinations by Sanzo Wada (配色事典)', url: 'https://en.seigensha.com/books/978-4-86152-247-5/' },
-            { label: 'My personal website', url: '#' }, // might not include
+            { label: '→ A Dictionary of Color Combinations by Sanzo Wada 和田三造『配色事典』', url: 'https://en.seigensha.com/books/978-4-86152-247-5/' },
+            { label: '→ My personal website', url: '#' }, // might not include
         ],
     },
     // skeuomorphism: { /* same shape */ },
@@ -33,7 +33,16 @@ function renderContent(theme) {
     content.features.forEach(feature => {
         const li = document.createElement('li');
         li.className = 'features-item';
-        li.textContent = `${feature.title}: ${feature.description}`;
+
+        const title = document.createElement('h4');
+        title.className = 'features-item-title';
+        title.textContent = feature.title;
+
+        const description = document.createElement('p');
+        description.className = 'features-item-description';
+        description.textContent = feature.description;
+
+        li.append(title, description);
         featuresList.appendChild(li);
     });
 

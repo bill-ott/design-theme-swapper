@@ -28,6 +28,7 @@
     --color-button-bg-hover: var(--color-golden-yellow);
     --color-sub-title-fg: var(--color-golden-yellow);
     --color-overview-bg: var(--color-off-white);
+    --color-features-bg: var(--color-off-white);
     --color-link: var(--color-red-orange);
 
     /* shape */
@@ -51,8 +52,9 @@
     --transform-button-hover: translateY(-2px);
     --transform-button-active: translateY(0);
 
-    /* type treatment */
+    /* treatments */
     --button-text-transform: uppercase;
+    --list-style-type: none;
 
     /* focus */
     --outline-focus: 2px solid var(--color-golden-yellow);
