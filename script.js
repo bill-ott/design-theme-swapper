@@ -6,3 +6,14 @@ buttons.forEach(button => {
         document.documentElement.setAttribute('data-theme', theme);
     });
 });
+
+const themeContent = {
+    default: {
+        about: {},
+        features: [],
+    },
+    skeuomorphism: {
+        about: {},
+        features: [],
+    },
+};

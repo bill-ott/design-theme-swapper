@@ -90,6 +90,7 @@ body {
 }
 .explainer {
     font-size: clamp(var(--font-size-h6), 3vw, var(--font-size-h5));
+    color: var(--color-explainer-fg);
 }
 .swapper-container {
     display: grid;
@@ -130,6 +131,29 @@ body {
     background-color: var(--color-content-bg);
     flex: 1;
     min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: var(--space-md);
+}
+.style-heading {
+    color: var(--color-title-fg);
+    font-size: var(--font-size-h2);
+    text-transform: uppercase;
+}
+.sub-section {
+    display: flex;
+    flex-direction: column;
+}
+.sub-section-heading {
+    color: var(--color-sub-title-fg);
+    font-size: var(--font-size-h4);
+    text-align: center;
+}
+.overview {
+    background-color: var(--color-overview-bg);
+    padding: var(--space-md);
+    border-radius: var(--radius-card);
 }
 @media (max-width: 68rem) { /* stack layout */
     .header-wrapper {

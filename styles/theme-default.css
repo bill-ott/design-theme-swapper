@@ -17,22 +17,24 @@
     --color-fg: var(--color-near-black);
     --color-header-bg: var(--color-off-white);
     --color-content-bg: var(--color-deep-lyons-blue);
-
     --color-title-fg: var(--color-red-orange);
     --color-title-bg: var(--color-deep-lyons-blue);
-
     --color-author-fg: var(--color-deep-lyons-blue);
     --color-author-bg: var(--color-golden-yellow);
-
+    --color-explainer-fg: var(--color-near-black);
     --color-button-fg: var(--color-golden-yellow);
     --color-button-bg: var(--color-blue-tint);
     --color-button-fg-hover: var(--color-deep-lyons-blue);
     --color-button-bg-hover: var(--color-golden-yellow);
+    --color-sub-title-fg: var(--color-golden-yellow);
+    --color-overview-bg: var(--color-off-white);
+    --color-link: var(--color-red-orange);
 
     /* shape */
     --radius-title: 1.25rem;
     --radius-author: 1.25rem;
     --radius-button: 5rem;
+    --radius-card: 1.25rem;
     --border-button: none;
 
     /* depth */
