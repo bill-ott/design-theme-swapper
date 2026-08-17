@@ -67,10 +67,10 @@ body {
     box-shadow: var(--shadow-title);
 }
 .title-word--1 {
-    margin-left: var(--space-lg);
+    margin-left: min(var(--space-lg), 8vw);
 }
 .title-word--2 {
-    margin-left: var(--space-xxl);
+    margin-left: min(var(--space-xxl), 20vw);
 }
 .author {
     margin: var(--space-sm) 0 0 auto;
