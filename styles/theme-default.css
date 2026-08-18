@@ -48,6 +48,9 @@
     --min-height-section-overview: 30rem;
     --min-height-section-features: 30rem;
     --min-height-section-resources: 30rem;
+    --max-width-overview-content: var(--max-width-content);
+    --max-width-features-content: var(--max-width-content);
+    --max-width-resources-content: var(--max-width-content);
     --radius-title-word: 1.25rem;
     --radius-author: 1.25rem;
     --radius-button: 3rem;
