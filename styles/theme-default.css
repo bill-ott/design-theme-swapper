@@ -2,10 +2,11 @@
     /* font */
     --font-family: Avenir, "Avenir Next", sans-serif;
     --font-size-site-title: clamp(var(--font-size-h5), 12vw, var(--font-size-h1));
-    --font-size-sub-section-heading: clamp(var(--font-size-h5), 12vw, var(--font-size-h2));
+    --font-size-content-heading: clamp(var(--font-size-h5), 12vw, var(--font-size-h3));
     --font-size-features-item-title: var(--font-size-h6);
     --font-size-overview: var(--font-size-h6);
     --font-size-resources: var(--font-size-h6);
+    --font-size-resources-link: var(--font-size-h5);
 
     /* raw palette */
     --color-red-orange: #E4462A;
@@ -25,13 +26,11 @@
     --color-text-title: var(--color-red-orange);
     --color-bg-author: var(--color-golden-yellow);
     --color-text-author: var(--color-deep-lyons-blue);
-    --color-bg-button: var(--color-twilight-blue);
+    --color-bg-button: var(--color-warm-gray);
     --color-text-button: var(--color-golden-yellow);
     --color-bg-button-hover: var(--color-golden-yellow);
     --color-text-button-hover: var(--color-deep-lyons-blue);
-    --color-bg-content: var(--color-deep-lyons-blue);
-    --color-text-style-heading: var(--color-red-orange);
-    --color-text-sub-title: var(--color-golden-yellow);
+    --color-bg-overview: var(--color-deep-lyons-blue);
     --color-text-overview: var(--color-off-white);
     --color-bg-features: var(--color-ochre);
     --color-text-features: var(--color-near-black);
@@ -46,9 +45,9 @@
     --max-width-right-content: 40rem;
     --min-height-features-card: 16rem;
     --min-height-section-header: 36rem;
-    --min-height-section-overview: 25rem;
-    --min-height-section-features: 25rem;
-    --min-height-section-resources: 25rem;
+    --min-height-section-overview: 30rem;
+    --min-height-section-features: 30rem;
+    --min-height-section-resources: 30rem;
     --radius-title-word: 1.25rem;
     --radius-author: 1.25rem;
     --radius-button: 3rem;
@@ -68,8 +67,7 @@
 
     /* treatments */
     --text-transform-button: uppercase;
-    --text-transform-style-heading: uppercase;
-    --text-transform-sub-section-heading: uppercase;
+    --text-transform-content-heading: uppercase;
     --text-decoration-link: none;
     --text-decoration-link-hover: none;
     --list-style-features-list: none;
@@ -79,17 +77,17 @@
     --outline-focus: 2px solid var(--color-golden-yellow);
 
     /* spacing */
-    --margin-header: 0;
+    --margin-header-wrapper: 0;
     --margin-left-title-word-1: min(var(--space-lg), 8vw);
     --margin-left-title-word-2: min(var(--space-xxl), 20vw);
     --margin-left-right-content: var(--space-xl);
-    --margin-sub-section: var(--space-sm) auto;
-    --margin-overview: var(--space-sm) 0;
     --padding-header-wrapper: var(--space-xl) var(--space-lg) var(--space-md);
     --padding-title-word: var(--space-sm);
-    --padding-overview: var(--space-sm) 0;
-    --padding-sub-section: var(--space-sm);
+    --padding-overview-wrapper: var(--space-sm);
+    --padding-features-wrapper: var(--space-sm);
+    --padding-resources-wrapper: var(--space-sm);
 
     /* orientation */
     --flex-direction-site-title: column;
+    --flex-direction-header-wrapper: row;
 }

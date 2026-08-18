@@ -107,6 +107,7 @@ function renderContent(theme) {
         a.className = 'resources-link';
         a.href = resource.url;
         a.textContent = resource.label;
+        a.target='_blank';
         li.appendChild(a);
         resourcesList.appendChild(li);
     });

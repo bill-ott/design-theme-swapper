@@ -97,6 +97,7 @@ body {
 }
 .explainer {
     font-size: clamp(var(--font-size-h6), 3vw, var(--font-size-h5));
+    color: var(--color-text-explainer);
 }
 .swapper-container {
     display: grid;
@@ -106,9 +107,7 @@ body {
 }
 .swapper-button {
     padding: var(--space-sm) var(--space-md);
-    font-family: var(--font-body);
     font-size: var(--font-size-p);
-    font-weight: var(--font-weight-bold);
     text-transform: var(--text-transform-button);
     white-space: nowrap;
     color: var(--color-text-button);
@@ -134,59 +133,60 @@ body {
     outline-offset: 2px;
 }
 .content-section {
-    background-color: var(--color-bg-content);
     flex: 1;
     min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--padding-content-section);
 }
-.sub-section {
-    max-width: var(--max-width-content);
-    margin: var(--margin-sub-section);
-    padding: var(--padding-sub-section);
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-bg-sub-section);
-    border-radius: var(--radius-sub-section);
+.overview-section {
     width: 100%;
-}
-.sub-section-heading {
-    font-family: var(--font-display);
-    font-size: var(--font-size-sub-section-heading);
-    text-transform: var(--text-transform-sub-section-heading);
-    color: var(--color-text-sub-title);
-    text-align: var(--text-align-subsection-heading);
-    margin: var(--margin-sub-section-heading);
+    background-color: var(--color-bg-overview);
+    color: var(--color-text-overview);
 }
 .overview-wrapper {
     min-height: var(--min-height-section-overview);
     width: 100%;
-    color: var(--color-text-overview);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-overview-wrapper);
 }
-.overview {
-    padding: var(--padding-overview);
-    margin: var(--margin-overview);
-    font-size: var(--font-size-overview);
-    max-width: var(--max-width-overview);
+.overview-content {
+    width: var(--max-width-content);
 }
 .overview-heading {
-    color: var(--color-text-overview);
+    font-size: var(--font-size-content-heading);
+    text-transform: var(--text-transform-content-heading);
+}
+.overview {
+    font-size: var(--font-size-overview);
+}
+.features-section {
+    background-color: var(--color-bg-features);
+    color: var(--color-text-features);
+    width: 100%;
 }
 .features-wrapper {
     min-height: var(--min-height-section-features);
-    background-color: var(--color-bg-features);
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-features-wrapper);
+}
+.features-content {
+    width: var(--max-width-content);
 }
 .features-heading {
-    color: var(--color-text-features);
+    font-size: var(--font-size-content-heading);
+    text-transform: var(--text-transform-content-heading);
 }
 .features-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style-type: var(--list-style-features-list);
-    padding: var(--space-xs);
+    padding: 0;
     margin: 0;
 }
 .features-item {
@@ -201,17 +201,28 @@ body {
 .features-item-title {
     font-size: var(--font-size-features-item-title);
 }
-.resources-wrapper {
-    min-height: var(--min-height-section-overview);
-    background-color: var(--color-bg-resources);
+.resources-section {
     width: 100%;
+    background-color: var(--color-bg-resources);
+    color: var(--color-text-resources);
+}
+.resources-wrapper {
+    min-height: var(--min-height-section-resources);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-resources-wrapper);
+}
+.resources-content {
+    width: var(--max-width-content);
 }
 .resources-heading {
-    color: var(--color-text-resources);
+    font-size: var(--font-size-content-heading);
+    text-transform: var(--text-transform-content-heading);
 }
 .further-reading {
     font-size: var(--font-size-resources);
-    color: var(--color-text-resources);
 }
 .resources-list {
     list-style-type: var(--list-style-resources-list);
@@ -219,7 +230,7 @@ body {
 .resources-link {
     color: var(--color-text-link);
     text-decoration: var(--text-decoration-link);
-    font-size: var(--font-size-h6);
+    font-size: var(--font-size-resources-link);
 }
 .resources-link:hover {
     color: var(--color-text-link-hover);
