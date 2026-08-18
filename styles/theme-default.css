@@ -2,7 +2,8 @@
     /* font */
     --font-family: Avenir, "Avenir Next", sans-serif;
     --font-size-site-title: clamp(var(--font-size-h5), 12vw, var(--font-size-h1));
-    --font-size-content-heading: clamp(var(--font-size-h5), 12vw, var(--font-size-h3));
+    --font-size-content-heading: clamp(var(--font-size-h5), 8vw, var(--font-size-h3));
+    --font-size-button: var(--font-size-p);
     --font-size-features-item-title: var(--font-size-h6);
     --font-size-overview: var(--font-size-h6);
     --font-size-resources: var(--font-size-h6);
@@ -77,13 +78,14 @@
     --list-style-resources-list: none;
 
     /* focus */
-    --outline-focus: 2px solid var(--color-golden-yellow);
+    --outline-focus: 2px solid var(--color-red-orange);
 
     /* spacing */
     --margin-header-wrapper: 0;
     --margin-left-title-word-1: min(var(--space-lg), 8vw);
     --margin-left-title-word-2: min(var(--space-xxl), 20vw);
     --margin-left-right-content: var(--space-xl);
+    --margin-content-heading: var(--space-xs) 0;
     --padding-header-wrapper: var(--space-xl) var(--space-lg) var(--space-md);
     --padding-title-word: var(--space-sm);
     --padding-overview-wrapper: var(--space-sm);

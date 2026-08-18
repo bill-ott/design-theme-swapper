@@ -9,36 +9,36 @@
     /* font */
     --font-family: "Segoe UI", "Noto Sans", Avenir, sans-serif;
     --font-size-site-title: clamp(var(--font-size-h5), 12vw, var(--font-size-h1));
-    --font-size-sub-section-heading: clamp(var(--font-size-h5), 12vw, var(--font-size-h3));
+    --font-size-button: var(--font-size-h6);
+    --font-size-content-heading: var(--font-size-h4);
+    --font-size-resources-link: var(--font-size-h6);
 
     /* raw palette */
     --color-lime-green: #9fe11d;
-    --color-lime-green-dark: #6b8f25;
-    --color-golden-yellow: #ffc933;
-    --color-sky-blue: #84cdec;
     --color-sky-pale: #c9eeff;
     --color-silver: #E6E6E6;
     --color-glass-white: rgba(255, 255, 255, 0.3);
-    --color-chrome-gray: #c8d3d6;
-    --color-chrome-gray-dark: #67696a;
-
-    /* neutral (gray) dark set */
-    --color-light-gray: #6b6b6b;
-    --color-med-gray: #343434;
-    --color-dark-gray: #1f1f1f;
     --color-olive-light: rgba(74, 90, 52, 0.678);
-    --color-olive-mid: rgba(47, 58, 34, 0.75);
+    --color-olive-med: rgba(47, 58, 34, 0.75);
     --color-olive-dark: rgba(26, 33, 18, 0.92);
+    --color-gray-light: rgba(107, 107, 107, 0.7);
+    --color-gray-med: rgba(52, 52, 52, 0.7);
+    --color-gray-dark: rgba(31, 31, 31, 0.7);
 
     /* gradients */
     --color-olive-gradient: linear-gradient(
         to bottom,
         var(--color-glass-white) 0%,
         var(--color-olive-light) 8%,
-        var(--color-olive-mid) 20%,
+        var(--color-olive-med) 20%,
         var(--color-olive-dark) 60%
     );
-    --color-bg-button: linear-gradient(to bottom, var(--color-med-gray), var(--color-dark-gray), var(--color-light-gray));
+    --color-gray-gradient: linear-gradient(
+        to bottom,
+        var(--color-gray-med),
+        var(--color-gray-dark),
+        var(--color-gray-light)
+    );
 
     /* semantic color */
     --color-bg-body: var(--color-sky-pale);
@@ -46,7 +46,7 @@
     --color-bg-content: transparent;
     --color-text-body: var(--color-silver);
     --color-bg-header-wrapper: var(--color-olive-gradient);
-    --color-bg-button: linear-gradient(to bottom, var(--color-med-gray), var(--color-dark-gray), var(--color-light-gray));
+    --color-bg-button: var(--color-gray-gradient);
     --color-bg-overview-content: var(--color-olive-gradient);
     --color-bg-features-content: var(--color-olive-gradient);
     --color-bg-resources-content: var(--color-olive-gradient);
@@ -59,7 +59,7 @@
     --radius-button: 1rem;
     --radius-content: 2.5rem;
     --radius-features-card: 1rem;
-    --border-button: none;
+    --border-button: 1px solid var(--color-gray-dark);
     --border-card: none;
     --min-height-features-item: 10rem;
     --max-width-header-wrapper: var(--max-width-content-narrow);
@@ -70,7 +70,7 @@
     /* depth */
     --shadow-tile: 0 2px 3px rgba(0, 0, 0, 0.18), 0 8px 12px rgba(0, 0, 0, 0.22), 0 20px 40px rgba(0, 0, 0, 0.5);
     --shadow-title: none;
-    --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.10), 0 6px 16px rgba(0, 0, 0, 0.14);
+    --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.389), 0 6px 16px rgba(0, 0, 0, 0.321);
     --shadow-button-hover: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 24px rgba(0, 0, 0, 0.18);
     --shadow-button-active: 0 2px 6px rgba(0, 0, 0, 0.15);
     --shadow-features-card: none;
@@ -80,8 +80,8 @@
     --shadow-header-wrapper: var(--shadow-tile);
 
     /* motion */
-    --transform-button-hover: translateY(-2px);
-    --transform-button-active: translateY(1px);
+    --transform-button-hover: translateX(-2px);
+    --transform-button-active: translateX(-1px);
 
     /* treatments */
     --list-style-features-list: none;
@@ -95,6 +95,7 @@
     /* spacing */
     --margin-header-wrapper: calc(var(--space-sm) * 2) var(--space-sm) var(--space-sm);
     --margin-content: var(--space-sm) 0 0;
+    --margin-content-heading: var(--space-xs) 0;
     --padding-header-wrapper: var(--space-md);
     --padding-title-word: 0 var(--space-xs);
     --padding-content: var(--space-sm);
