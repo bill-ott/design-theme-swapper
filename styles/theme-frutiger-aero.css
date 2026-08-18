@@ -1,6 +1,8 @@
 [data-theme="frutiger-aero"] {
     /* font */
     --font-family: "Segoe UI", "Noto Sans", Avenir, sans-serif;
+    --font-size-site-title: clamp(var(--font-size-h5), 12vw, var(--font-size-h1));
+    --font-size-sub-section-heading: clamp(var(--font-size-h5), 12vw, var(--font-size-h3));
 
     /* raw palette */
     --color-lime-green: #9fe11d;
@@ -63,8 +65,9 @@
     --margin-header-wrapper: var(--space-sm);
     --padding-header-wrapper: var(--space-md);
     --padding-title-word: 0 var(--space-xs);
-    --margin-sub-section-heading: var(--space-sm);
-    --margin-sub-section: var(--space-sm);
+    --padding-content-section: 0 var(--space-sm);
+    --padding-sub-section: var(--space-md);
+    --margin-sub-section: var(--space-sm) auto;
 
     /* orientation */
     --flex-direction-header-wrapper: column;
