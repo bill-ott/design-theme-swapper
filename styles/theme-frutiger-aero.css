@@ -13,39 +13,50 @@
 
     /* raw palette */
     --color-lime-green: #9fe11d;
-    --color-lime-green-light: #ccff7c;
     --color-lime-green-dark: #6b8f25;
-    --color-forest-green: #394e1b;
-    --color-mint-pale: #c7f3d0;
-    --color-lime-cream: #f1ffcd;
     --color-golden-yellow: #ffc933;
     --color-sky-blue: #84cdec;
-    --color-sky-blue-bright: #38abe4;
     --color-sky-pale: #c9eeff;
-    --color-sky-mist: #d7f0f7;
-    --color-white: #ffffff;
     --color-silver: #E6E6E6;
-    --color-glass-white: rgba(255, 255, 255, 0.35);
+    --color-glass-white: rgba(255, 255, 255, 0.3);
     --color-chrome-gray: #c8d3d6;
     --color-chrome-gray-dark: #67696a;
+
+    /* neutral (gray) dark set */
+    --color-light-gray: #6b6b6b;
+    --color-med-gray: #343434;
+    --color-dark-gray: #1f1f1f;
+    --color-olive-light: rgba(74, 90, 52, 0.678);
+    --color-olive-mid: rgba(47, 58, 34, 0.75);
+    --color-olive-dark: rgba(26, 33, 18, 0.92);
+
+    /* gradients */
+    --color-olive-gradient: linear-gradient(
+        to bottom,
+        var(--color-glass-white) 0%,
+        var(--color-olive-light) 8%,
+        var(--color-olive-mid) 20%,
+        var(--color-olive-dark) 60%
+    );
+    --color-bg-button: linear-gradient(to bottom, var(--color-med-gray), var(--color-dark-gray), var(--color-light-gray));
 
     /* semantic color */
     --color-bg-body: var(--color-sky-pale);
     --color-bg-header: transparent;
     --color-bg-content: transparent;
     --color-text-body: var(--color-silver);
-    --color-bg-header-wrapper: var(--color-chrome-gray-dark);
-    --color-text-style-heading: var(--color-lime-green-dark);
-    --color-bg-overview-content: var(--color-chrome-gray-dark);
-    --color-bg-features-content: var(--color-chrome-gray-dark);
-    --color-bg-resources-content: var(--color-chrome-gray-dark);
+    --color-bg-header-wrapper: var(--color-olive-gradient);
+    --color-bg-button: linear-gradient(to bottom, var(--color-med-gray), var(--color-dark-gray), var(--color-light-gray));
+    --color-bg-overview-content: var(--color-olive-gradient);
+    --color-bg-features-content: var(--color-olive-gradient);
+    --color-bg-resources-content: var(--color-olive-gradient);
     --color-bg-features-card: var(--color-glass-white);
     --color-text-link: var(--color-lime-green);
     --color-text-link-hover: color-mix(in srgb, var(--color-text-link) 65%, transparent);
 
     /* shape */
     --radius-header-wrapper: 2.5rem;
-    --radius-button: 3rem;
+    --radius-button: 1rem;
     --radius-content: 2.5rem;
     --radius-features-card: 1rem;
     --border-button: none;
@@ -57,15 +68,20 @@
     --max-width-resources-content: var(--max-width-content-narrow);
 
     /* depth */
+    --shadow-tile: 0 2px 3px rgba(0, 0, 0, 0.18), 0 8px 12px rgba(0, 0, 0, 0.22), 0 20px 40px rgba(0, 0, 0, 0.5);
     --shadow-title: none;
     --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.10), 0 6px 16px rgba(0, 0, 0, 0.14);
     --shadow-button-hover: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 24px rgba(0, 0, 0, 0.18);
     --shadow-button-active: 0 2px 6px rgba(0, 0, 0, 0.15);
     --shadow-features-card: none;
+    --shadow-overview-content: var(--shadow-tile);
+    --shadow-features-content: var(--shadow-tile);
+    --shadow-resources-content: var(--shadow-tile);
+    --shadow-header-wrapper: var(--shadow-tile);
 
     /* motion */
     --transform-button-hover: translateY(-2px);
-    --transform-button-active: translateY(0);
+    --transform-button-active: translateY(1px);
 
     /* treatments */
     --list-style-features-list: none;
@@ -74,10 +90,10 @@
     --text-decoration-link-hover: none;
 
     /* focus */
-    --outline-focus: 2px solid var(--color-golden-yellow);
+    --outline-focus: 2px solid var(--color-lime-green);
 
     /* spacing */
-    --margin-header-wrapper: calc(var(--space-sm) * 2) 0 var(--space-sm);
+    --margin-header-wrapper: calc(var(--space-sm) * 2) var(--space-sm) var(--space-sm);
     --margin-content: var(--space-sm) 0 0;
     --padding-header-wrapper: var(--space-md);
     --padding-title-word: 0 var(--space-xs);

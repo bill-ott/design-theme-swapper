@@ -52,8 +52,9 @@ body {
     max-width: var(--max-width-header-wrapper);
     padding: var(--padding-header-wrapper);
     margin: var(--margin-header-wrapper);
-    background-color: var(--color-bg-header-wrapper);
+    background: var(--color-bg-header-wrapper);
     border-radius: var(--radius-header-wrapper);
+    box-shadow: var(--shadow-header-wrapper);
 }
 .site-header {
     display: flex;
@@ -111,7 +112,7 @@ body {
     text-transform: var(--text-transform-button);
     white-space: nowrap;
     color: var(--color-text-button);
-    background-color: var(--color-bg-button);
+    background: var(--color-bg-button);
     border: var(--border-button);
     border-radius: var(--radius-button);
     box-shadow: var(--shadow-button);
@@ -155,10 +156,11 @@ body {
 }
 .overview-content {
     width: var(--max-width-overview-content);
-    background-color: var(--color-bg-overview-content);
+    background: var(--color-bg-overview-content);
     border-radius: var(--radius-content);
     margin: var(--margin-content);
     padding: var(--padding-content);
+    box-shadow: var(--shadow-overview-content);
 }
 .overview-heading {
     font-size: var(--font-size-content-heading);
@@ -182,10 +184,11 @@ body {
 }
 .features-content {
     width: var(--max-width-features-content);
-    background-color: var(--color-bg-features-content);
+    background: var(--color-bg-features-content);
     border-radius: var(--radius-content);
     margin: var(--margin-content);
     padding: var(--padding-content);
+    box-shadow: var(--shadow-features-content);
 }
 .features-heading {
     font-size: var(--font-size-content-heading);
@@ -225,10 +228,11 @@ body {
 }
 .resources-content {
     width: var(--max-width-resources-content);
-    background-color: var(--color-bg-resources-content);
+    background: var(--color-bg-resources-content);
     border-radius: var(--radius-content);
     margin: var(--margin-content);
     padding: var(--padding-content);
+    box-shadow: var(--shadow-resources-content);
 }
 .resources-heading {
     font-size: var(--font-size-content-heading);
