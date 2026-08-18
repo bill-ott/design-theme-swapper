@@ -1,4 +1,11 @@
+[data-theme="frutiger-aero"] body {
+    background: var(--bg-image-content) center 65% / cover fixed no-repeat, var(--color-bg-body);
+}
+
 [data-theme="frutiger-aero"] {
+    /* background */
+    --bg-image-content: url('/assets/img/aero-volcano.jpeg');
+    
     /* font */
     --font-family: "Segoe UI", "Noto Sans", Avenir, sans-serif;
     --font-size-site-title: clamp(var(--font-size-h5), 12vw, var(--font-size-h1));
@@ -24,6 +31,8 @@
 
     /* semantic color */
     --color-bg-body: var(--color-sky-pale);
+    --color-bg-header: transparent;
+    --color-bg-content: transparent;
     --color-text-body: var(--color-silver);
     --color-bg-header-wrapper: var(--color-chrome-gray-dark);
     --color-text-style-heading: var(--color-lime-green-dark);
