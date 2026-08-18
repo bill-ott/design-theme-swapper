@@ -14,10 +14,14 @@
     --font-size-resources-link: var(--font-size-h6);
 
     /* raw palette */
-    --color-lime-green: #9fe11d;
+    --color-lime: #9fe11d;
+    --color-lime-light: #d3eca1;
+    --color-lime: #9fe11d;
+    --color-lime-dark: #354b0abf;
     --color-sky-pale: #c9eeff;
     --color-silver: #E6E6E6;
     --color-glass-white: rgba(255, 255, 255, 0.3);
+    --color-glass-white-light: rgba(255, 255, 255, 0.204);
     --color-olive-light: rgba(74, 90, 52, 0.678);
     --color-olive-med: rgba(47, 58, 34, 0.75);
     --color-olive-dark: rgba(26, 33, 18, 0.92);
@@ -26,32 +30,39 @@
     --color-gray-dark: rgba(31, 31, 31, 0.7);
 
     /* gradients */
-    --color-olive-gradient: linear-gradient(
+    --color-olive-gradient-linear: linear-gradient(
         to bottom,
         var(--color-glass-white) 0%,
         var(--color-olive-light) 8%,
         var(--color-olive-med) 20%,
         var(--color-olive-dark) 60%
     );
-    --color-gray-gradient: linear-gradient(
+    --color-gray-gradient-linear: linear-gradient(
         to bottom,
         var(--color-gray-med),
         var(--color-gray-dark),
         var(--color-gray-light)
     );
+    --color-lime-gradient-radial: 
+        radial-gradient(ellipse 140% 80% at 50% 0%, 
+            var(--color-glass-white-light) 0%, 
+            var(--color-glass-white-light) 69%, 
+            transparent 71%
+        ),
+        linear-gradient(to bottom, var(--color-lime-dark), var(--color-lime));
 
     /* semantic color */
     --color-bg-body: var(--color-sky-pale);
     --color-bg-header: transparent;
     --color-bg-content: transparent;
     --color-text-body: var(--color-silver);
-    --color-bg-header-wrapper: var(--color-olive-gradient);
-    --color-bg-button: var(--color-gray-gradient);
-    --color-bg-overview-content: var(--color-olive-gradient);
-    --color-bg-features-content: var(--color-olive-gradient);
-    --color-bg-resources-content: var(--color-olive-gradient);
-    --color-bg-features-card: var(--color-glass-white);
-    --color-text-link: var(--color-lime-green);
+    --color-bg-header-wrapper: var(--color-olive-gradient-linear);
+    --color-bg-button: var(--color-gray-gradient-linear);
+    --color-bg-overview-content: var(--color-olive-gradient-linear);
+    --color-bg-features-content: var(--color-olive-gradient-linear);
+    --color-bg-resources-content: var(--color-olive-gradient-linear);
+    --color-bg-features-card: var(--color-lime-gradient-radial);
+    --color-text-link: var(--color-lime);
     --color-text-link-hover: color-mix(in srgb, var(--color-text-link) 65%, transparent);
 
     /* shape */
@@ -61,11 +72,12 @@
     --radius-features-card: 1rem;
     --border-button: 1px solid var(--color-gray-dark);
     --border-card: none;
-    --min-height-features-item: 10rem;
     --max-width-header-wrapper: var(--max-width-content-narrow);
     --max-width-overview-content: var(--max-width-content-narrow);
-    --max-width-features-content: var(--max-width-content);
+    --max-width-features-content: var(--max-width-content-narrow);
     --max-width-resources-content: var(--max-width-content-narrow);
+    --max-width-features-card: 25rem;
+    --aspect-ratio-features-card: calc(1 / 1);
 
     /* depth */
     --shadow-tile: 0 2px 3px rgba(0, 0, 0, 0.18), 0 8px 12px rgba(0, 0, 0, 0.22), 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -90,7 +102,7 @@
     --text-decoration-link-hover: none;
 
     /* focus */
-    --outline-focus: 2px solid var(--color-lime-green);
+    --outline-focus: 2px solid var(--color-lime);
 
     /* spacing */
     --margin-header-wrapper: calc(var(--space-sm) * 2) var(--space-sm) var(--space-sm);
@@ -101,7 +113,7 @@
     --padding-content: var(--space-sm);
     --padding-overview-wrapper: var(--space-sm);
     --padding-features-wrapper: var(--space-sm);
-    --padding-resources-wrapper: var(--space-sm) 0 calc(var(--space-sm) * 2);
+    --padding-resources-wrapper: var(--space-sm) var(--space-sm) calc(var(--space-sm) * 2);
 
     /* orientation */
     --flex-direction-header-wrapper: column;

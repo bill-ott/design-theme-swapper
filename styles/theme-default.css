@@ -49,6 +49,7 @@
     --min-height-section-overview: 30rem;
     --min-height-section-features: 30rem;
     --min-height-section-resources: 30rem;
+    --max-width-features-card: 30rem;
     --max-width-overview-content: var(--max-width-content);
     --max-width-features-content: var(--max-width-content);
     --max-width-resources-content: var(--max-width-content);
@@ -57,6 +58,7 @@
     --radius-button: 3rem;
     --radius-features-card: 1.25rem;
     --border-button: none;
+    --aspect-ratio-features-card: calc(1 / .6);
 
     /* depth */
     --shadow-title: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -88,7 +90,7 @@
     --margin-content-heading: var(--space-xs) 0;
     --padding-header-wrapper: var(--space-xl) var(--space-lg) var(--space-md);
     --padding-title-word: var(--space-sm);
-    --padding-overview-wrapper: var(--space-sm);
+    --padding-overview-wrapper: var(--space-md);
     --padding-features-wrapper: var(--space-sm);
     --padding-resources-wrapper: var(--space-sm);
 

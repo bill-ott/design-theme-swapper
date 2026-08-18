@@ -198,17 +198,23 @@ body {
 }
 .features-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-sm);
+    align-items: center;
+    justify-items: center;
     list-style-type: var(--list-style-features-list);
     padding: 0;
     margin: 0;
 }
 .features-item {
-    background-color: var(--color-bg-features-card);
+    width: 100%;
+    max-width: var(--max-width-features-card);
+    background: var(--color-bg-features-card);
     border-radius: var(--radius-features-card);
     box-shadow: var(--shadow-features-card);
-    min-height: var(--min-height-features-card);
+    aspect-ratio: var(--aspect-ratio-features-card);
     text-align: center;
+    margin-inline: auto;
     margin: var(--space-sm);
     padding: var(--space-sm);
 }

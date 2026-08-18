@@ -36,30 +36,29 @@ const themeContent = {
     'frutiger-aero': {
         name: 'Frutiger Aero',
         overview: `Frutiger Aero is the optimistic tech aesthetic of roughly 2004 to 2013.
-            Think glossy buttons, water droplets, and a lot of sky blue and lime green.
-            It's what Windows Vista desktop images and Nintendo DS and Wii marketing might fall under.
+            Remember when everything on the web looked glossy and glassy? Think that.
+            It's what Windows Vista desktop images and Nintendo DS or Wii marketing might fall under.
             It runs on the idea that technology was going to be clean and friendly and integrated with nature somehow.
-            Named for Adrian Frutiger, whose typefaces show up all over the era.
-            Has enjoyed a bit of a nostalgic revival lately.`,
+            The name is a portmanteau of Adrian Frutiger, the designer behind several typefaces used throughout the era, and Windows' glassy "Aero" interface.
+            This style has enjoyed a bit of a nostalgic revival lately.`,
         features: [
             {
-                title: 'Bright color palettes',
-                description: `Imagery featuring lime green, sky blue, and crisp whites.
-                    Amped up saturation.
-                    Sandy white beaches, grassy hills overlooking a cluster of skyscrapers.
-                    Macro shots of some leaves.
-                    There are maybe a lot of giant bubbles floating by for some reason.`
+                title: 'Bright, naturey imagery',
+                description: `Natural elements and a palette that might include lime green, sky blue, and/or crisp white.
+                    White beaches, grassy hills overlooking skyscrapers, a macro shot of some leaves.
+                    There are maybe giant bubbles floating by for some reason.`
             },
             {
                 title: 'Glassy textures',
                 description: `Heavy use of water and glass-like elements.
-                    Not misty, think clear and reflective.
+                    Not misty, but rather clear and reflective.
                     A "dewy" vibe.
-                    Rounded edges invoke water droplets and bubbles.`
+                    Rounded edges on elements invoke water droplets and bubbles.`
             },
             {
                 title: 'Open and airy',
-                description: `Minimal composition with little crowding of various elements.`
+                description: `Minimal composition with little crowding of various elements.
+                    Perhaps so the viewer can enjoy a beautiful background image.`
             },
         ],
         resources: [
