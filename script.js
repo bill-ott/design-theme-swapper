@@ -4,6 +4,8 @@ const themeContent = {
         overview: `The default style of this website is my own.
             I like simplicity, a cohesive color palette, and softer edges (including font).
             I prefer when content is organized and flows well, so a reader isn't jumping around trying to figure out what to look at next.
+            I like starting with a color palette and building off it.
+            I'm a huge fan of the book A Dictionary of Color Combinations by Sanzo Wada and use it for inspiration constantly.
             I'm a Frontend Developer and like to dabble in web design via projects like this.
             It's not only great practice, it's a great creative outlet.
             Most of my day is spent implementing someone else's design, so building something where every decision is mine feels like a different kind of work.`,
