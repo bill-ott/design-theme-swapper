@@ -58,13 +58,13 @@ const themeContent = {
             {
                 title: 'Open and airy',
                 description: `Minimal composition with little crowding of various elements.
-                    Perhaps so the viewer can enjoy a beautiful background image.`
+                    Perhaps so the viewer can enjoy a beautiful background image photo, such as this one of some Japanese maple leaves, which I took a few years ago.`
             },
         ],
         resources: [
             { label: '→ Frutiger Aero Wikipedia entry', url: 'https://en.wikipedia.org/wiki/Frutiger_Aero' },
+            { label: '→ Frutiger Aero Aesthetic', url: 'https://frutiger-aero.org/frutiger-aero' },
             { label: '→ The Frutiger Aero Archive', url: 'https://frutigeraeroarchive.org/' },
-            { label: '→ Frutiger Aero design aesthetic directory', url: 'https://frutiger-aero.neocities.org/' },
         ],
     },
     // skeuomorphism: { /* same shape */ },
