@@ -140,7 +140,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: var(--space-md);
 }
 .sub-section {
     max-width: var(--max-width-content);
@@ -203,7 +202,11 @@ body {
 }
 .resources-wrapper {
     min-height: var(--min-height-section-overview);
+    background-color: var(--color-bg-resources);
     width: 100%;
+}
+.resources-heading {
+    color: var(--color-text-resources);
 }
 .further-reading {
     font-size: var(--font-size-resources);

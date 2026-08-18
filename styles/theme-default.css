@@ -20,6 +20,7 @@
     --color-oat: #E4DAC6;
     --color-ochre: #C99A3D;
     --color-dusty-orange: #C9705C;
+    --color-warm-gray: #4A423A;
 
     /* semantic color */
     --color-bg-body: var(--color-off-white);
@@ -37,10 +38,11 @@
     --color-text-style-heading: var(--color-red-orange);
     --color-text-sub-title: var(--color-golden-yellow);
     --color-text-overview: var(--color-off-white);
-    --color-text-resources: var(--color-off-white);
     --color-bg-features: var(--color-ochre);
     --color-text-features: var(--color-near-black);
     --color-bg-features-card: var(--color-off-white);
+    --color-bg-resources: var(--color-warm-gray);
+    --color-text-resources: var(--color-golden-yellow);
     --color-text-link: var(--color-red-orange);
     --color-text-link-hover: color-mix(in srgb, var(--color-text-link) 65%, transparent);
 
