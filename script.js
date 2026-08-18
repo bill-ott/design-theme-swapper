@@ -47,7 +47,8 @@ const themeContent = {
                 description: `Imagery featuring lime green, sky blue, and crisp whites.
                     Amped up saturation.
                     Sandy white beaches, grassy hills overlooking a cluster of skyscrapers.
-                    There are a lot of giant bubbles floating by for some reason.`
+                    Macro shots of some leaves.
+                    There are maybe a lot of giant bubbles floating by for some reason.`
             },
             {
                 title: 'Glassy textures',
