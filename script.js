@@ -1,11 +1,12 @@
 const themeContent = {
     default: {
-        name: 'Default',
-        overview: `The default style is my own.
+        name: 'Default Style',
+        overview: `The default style of this website is my own.
             I like simplicity, a cohesive color palette, and softer edges (including font).
-            I prefer when content is organized and flows well.
-            I'm a Front-End Developer and like to dabble in web design via projects like this.
-            It's not only great practice, it's a great outlet.`,
+            I prefer when content is organized and flows well, so a reader isn't jumping around trying to figure out what to look at next.
+            I'm a Frontend Developer and like to dabble in web design via projects like this.
+            It's not only great practice, it's a great creative outlet.
+            Most of my day is spent implementing someone else's design, so building something where every decision is mine feels like a different kind of work.`,
         features: [
             {
                 title: 'Function over form',
@@ -74,7 +75,7 @@ function renderContent(theme) {
     const content = themeContent[theme];
     if (!content) return;
 
-    document.querySelector('.style-heading').textContent = content.name;
+    document.querySelector('.overview-heading').textContent = content.name;
     document.querySelector('.overview').textContent = content.overview;
 
     const featuresList = document.querySelector('.features-list');
