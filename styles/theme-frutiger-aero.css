@@ -1,0 +1,120 @@
+[data-theme="frutiger-aero"] body {
+    background: var(--bg-image-content) center 65% / cover fixed no-repeat, var(--color-bg-body);
+}
+
+[data-theme="frutiger-aero"] {
+    /* background */
+    --bg-image-content: url('/assets/img/aero-leaves.jpeg');
+    
+    /* font */
+    --font-family: "Segoe UI", "Noto Sans", Avenir, sans-serif;
+    --font-size-site-title: clamp(var(--font-size-h5), 12vw, var(--font-size-h1));
+    --font-size-button: var(--font-size-h6);
+    --font-size-content-heading: var(--font-size-h4);
+    --font-size-resources-link: var(--font-size-h6);
+
+    /* raw palette */
+    --color-lime: #9fe11d;
+    --color-lime-light: #d3eca1;
+    --color-lime: #9fe11d;
+    --color-lime-dark: #354b0abf;
+    --color-sky-pale: #c9eeff;
+    --color-silver: #E6E6E6;
+    --color-glass-white: rgba(255, 255, 255, 0.3);
+    --color-glass-white-light: rgba(255, 255, 255, 0.204);
+    --color-olive-light: rgba(74, 90, 52, 0.678);
+    --color-olive-med: rgba(47, 58, 34, 0.75);
+    --color-olive-dark: rgba(26, 33, 18, 0.92);
+    --color-gray-light: rgba(107, 107, 107, 0.7);
+    --color-gray-med: rgba(52, 52, 52, 0.7);
+    --color-gray-dark: rgba(31, 31, 31, 0.7);
+
+    /* gradients */
+    --color-olive-gradient-linear: linear-gradient(
+        to bottom,
+        var(--color-glass-white) 0%,
+        var(--color-olive-light) 8%,
+        var(--color-olive-med) 20%,
+        var(--color-olive-dark) 60%
+    );
+    --color-gray-gradient-linear: linear-gradient(
+        to bottom,
+        var(--color-gray-med),
+        var(--color-gray-dark),
+        var(--color-gray-light)
+    );
+    --color-lime-gradient-radial: 
+        radial-gradient(ellipse 140% 80% at 50% 0%, 
+            var(--color-glass-white-light) 0%, 
+            var(--color-glass-white-light) 69%, 
+            transparent 71%
+        ),
+        linear-gradient(to bottom, var(--color-lime-dark), var(--color-lime));
+
+    /* semantic color */
+    --color-bg-body: var(--color-sky-pale);
+    --color-bg-header: transparent;
+    --color-bg-content: transparent;
+    --color-text-body: var(--color-silver);
+    --color-bg-header-wrapper: var(--color-olive-gradient-linear);
+    --color-bg-button: var(--color-gray-gradient-linear);
+    --color-bg-overview-content: var(--color-olive-gradient-linear);
+    --color-bg-features-content: var(--color-olive-gradient-linear);
+    --color-bg-resources-content: var(--color-olive-gradient-linear);
+    --color-bg-features-card: var(--color-lime-gradient-radial);
+    --color-text-link: var(--color-lime);
+    --color-text-link-hover: color-mix(in srgb, var(--color-text-link) 65%, transparent);
+
+    /* shape */
+    --radius-header-wrapper: 2.5rem;
+    --radius-button: 1rem;
+    --radius-content: 2.5rem;
+    --radius-features-card: 1rem;
+    --border-button: 1px solid var(--color-gray-dark);
+    --border-card: none;
+    --max-width-header-wrapper: var(--max-width-content-narrow);
+    --max-width-overview-content: var(--max-width-content-narrow);
+    --max-width-features-content: var(--max-width-content-narrow);
+    --max-width-resources-content: var(--max-width-content-narrow);
+    --max-width-features-card: 25rem;
+    --aspect-ratio-features-card: calc(1 / 1);
+
+    /* depth */
+    --shadow-tile: 0 2px 3px rgba(0, 0, 0, 0.18), 0 8px 12px rgba(0, 0, 0, 0.22), 0 20px 40px rgba(0, 0, 0, 0.5);
+    --shadow-title: none;
+    --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.389), 0 6px 16px rgba(0, 0, 0, 0.321);
+    --shadow-button-hover: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 24px rgba(0, 0, 0, 0.18);
+    --shadow-button-active: 0 2px 6px rgba(0, 0, 0, 0.15);
+    --shadow-features-card: none;
+    --shadow-overview-content: var(--shadow-tile);
+    --shadow-features-content: var(--shadow-tile);
+    --shadow-resources-content: var(--shadow-tile);
+    --shadow-header-wrapper: var(--shadow-tile);
+
+    /* motion */
+    --transform-button-hover: translateX(-2px);
+    --transform-button-active: translateX(-1px);
+
+    /* treatments */
+    --list-style-features-list: none;
+    --list-style-resources-list: none;
+    --text-decoration-link: none;
+    --text-decoration-link-hover: none;
+
+    /* focus */
+    --outline-focus: 2px solid var(--color-lime);
+
+    /* spacing */
+    --margin-header-wrapper: calc(var(--space-sm) * 2) var(--space-sm) var(--space-sm);
+    --margin-content: var(--space-sm) 0 0;
+    --margin-content-heading: var(--space-xs) 0;
+    --padding-header-wrapper: var(--space-md);
+    --padding-title-word: 0 var(--space-xs);
+    --padding-content: var(--space-sm);
+    --padding-overview-wrapper: var(--space-sm);
+    --padding-features-wrapper: var(--space-sm);
+    --padding-resources-wrapper: var(--space-sm) var(--space-sm) calc(var(--space-sm) * 2);
+
+    /* orientation */
+    --flex-direction-header-wrapper: column;
+}

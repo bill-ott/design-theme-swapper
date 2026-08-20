@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="styles/theme-brutalism.css">
     <link rel="stylesheet" href="styles/theme-early-web.css">
     <link rel="stylesheet" href="styles/theme-8bit.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="header-section">
@@ -27,15 +31,14 @@
             <div class="right-content">
                 <div class="explainer">
                     <p class="intro">
-                        Design Theme Swapper is a simple project I made to try designing for various web aesthetics.
-                        Each style below reworks the same page with different colors, type, shapes, and spacing. Click a button to
-                        swap between them and see how much a shared structure can change with a different
-                        visual language on top.
+                        Design Theme Swapper is a simple project that explores the differences between a few web design styles.
+                        Each style reworks the base elements of this page, applying different colors, fonts, shapes, and spacing.
+                        I hope you find this interesting.
                     </p>
-                    <p>Check them out to learn more about each style.</p>
+                    <p>Click the buttons below to check out each style and learn more.</p>
                 </div>
                 <div class="swapper-container">
-                    <button class="swapper-button" data-theme-target="default">Default</button>
+                    <button class="swapper-button" data-theme-target="default">Default Style</button>
                     <button class="swapper-button" data-theme-target="skeuomorphism">Skeuomorphism</button>
                     <button class="swapper-button" data-theme-target="frutiger-aero">Frutiger Aero</button>
                     <button class="swapper-button" data-theme-target="brutalism">Brutalism</button>
@@ -45,7 +48,41 @@
             </div>
         </div>
     </section>
-    <section class="content-section"></section>
+    <section class="content-section">
+        <div class="overview-section">
+            <div class="overview-wrapper">
+                <div class="overview-content">
+                    <h3 class="overview-heading"></h3>
+                    <p class="overview"></p>
+                </div>
+            </div>
+        </div>
+        <div class="features-section">
+            <div class="features-wrapper">
+                <div class="features-content">
+                    <h3 class="features-heading">Design Features</h3>
+                    <ul class="features-list">
+                        <li class="features-item"></li>
+                        <li class="features-item"></li>
+                        <li class="features-item"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="resources-section">
+            <div class="resources-wrapper">
+                <div class="resources-content">
+                    <h3 class="resources-heading">Resources</h3>
+                    <p class="further-reading">Some further reading:</p>
+                    <ul class="resources-list">
+                        <li class="resources-item">
+                            <a class="resources-link" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

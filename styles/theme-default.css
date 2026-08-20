@@ -1,57 +1,100 @@
 [data-theme="default"] {
-    /* fonts */
-    --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    --font-display: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    --font-weight-bold: bold;
+    /* font */
+    --font-family: Avenir, "Avenir Next", sans-serif;
+    --font-size-site-title: clamp(var(--font-size-h5), 12vw, var(--font-size-h1));
+    --font-size-content-heading: clamp(var(--font-size-h5), 8vw, var(--font-size-h3));
+    --font-size-button: var(--font-size-p);
+    --font-size-features-item-title: var(--font-size-h6);
+    --font-size-overview: var(--font-size-h6);
+    --font-size-resources: var(--font-size-h6);
+    --font-size-resources-link: var(--font-size-h5);
 
-    /* raw palette (a variation on primaries) */
+    /* raw palette */
     --color-red-orange: #E4462A;
     --color-deep-lyons-blue: #1E2A5E;
     --color-golden-yellow: #F4B400;
     --color-off-white: #F7F4EC;
     --color-near-black: #1A1610;
-    --color-blue-tint: #3A4A8C;
+    --color-twilight-blue: #3A4A8C;
+    --color-ochre: #C99A3D;
+    --color-warm-gray: #4A423A;
 
     /* semantic color */
-    --color-bg: var(--color-blue-tint);
-    --color-fg: var(--color-near-black);
-    --color-header-bg: var(--color-off-white);
-    --color-content-bg: var(--color-deep-lyons-blue);
-
-    --color-title-fg: var(--color-red-orange);
-    --color-title-bg: var(--color-deep-lyons-blue);
-
-    --color-author-fg: var(--color-deep-lyons-blue);
-    --color-author-bg: var(--color-golden-yellow);
-
-    --color-button-fg: var(--color-golden-yellow);
-    --color-button-bg: var(--color-blue-tint);
-    --color-button-fg-hover: var(--color-deep-lyons-blue);
-    --color-button-bg-hover: var(--color-golden-yellow);
+    --color-bg-body: var(--color-off-white);
+    --color-text-body: var(--color-near-black);
+    --color-bg-header: var(--color-off-white);
+    --color-bg-title: var(--color-deep-lyons-blue);
+    --color-text-title: var(--color-red-orange);
+    --color-bg-author: var(--color-golden-yellow);
+    --color-text-author: var(--color-deep-lyons-blue);
+    --color-bg-button: var(--color-warm-gray);
+    --color-text-button: var(--color-golden-yellow);
+    --color-bg-button-hover: var(--color-golden-yellow);
+    --color-text-button-hover: var(--color-deep-lyons-blue);
+    --color-bg-overview: var(--color-deep-lyons-blue);
+    --color-text-overview: var(--color-off-white);
+    --color-bg-features: var(--color-ochre);
+    --color-text-features: var(--color-near-black);
+    --color-bg-features-card: var(--color-off-white);
+    --color-bg-resources: var(--color-warm-gray);
+    --color-text-resources: var(--color-golden-yellow);
+    --color-text-link: var(--color-red-orange);
+    --color-text-link-hover: color-mix(in srgb, var(--color-text-link) 65%, transparent);
 
     /* shape */
-    --radius-title: 1.25rem;
+    --max-width-header-wrapper: var(--max-width-content);
+    --max-width-right-content: 40rem;
+    --min-height-features-card: 16rem;
+    --min-height-section-header: 36rem;
+    --min-height-section-overview: 30rem;
+    --min-height-section-features: 30rem;
+    --min-height-section-resources: 30rem;
+    --max-width-features-card: 30rem;
+    --max-width-overview-content: var(--max-width-content);
+    --max-width-features-content: var(--max-width-content);
+    --max-width-resources-content: var(--max-width-content);
+    --radius-title-word: 1.25rem;
     --radius-author: 1.25rem;
-    --radius-button: 5rem;
+    --radius-button: 3rem;
+    --radius-features-card: 1.25rem;
     --border-button: none;
+    --aspect-ratio-features-card: calc(1 / .6);
 
     /* depth */
-    --shadow-title: 0 1px 2px rgba(0, 0, 0, 0.06);
-    --shadow-button:
-        0 2px 4px rgba(0, 0, 0, 0.10),
-        0 6px 16px rgba(0, 0, 0, 0.14);
-    --shadow-button-hover:
-        0 4px 8px rgba(0, 0, 0, 0.12),
-        0 10px 24px rgba(0, 0, 0, 0.18);
-    --shadow-button-active: 0 2px 4px rgba(0, 0, 0, 0.10);
+    --shadow-title: 0 2px 6px rgba(0, 0, 0, 0.15);
+    --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.10), 0 6px 16px rgba(0, 0, 0, 0.14);
+    --shadow-button-hover: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 24px rgba(0, 0, 0, 0.18);
+    --shadow-button-active: 0 2px 6px rgba(0, 0, 0, 0.15);
+    --shadow-features-card: 0 2px 6px rgba(0, 0, 0, 0.15);
 
     /* motion */
     --transform-button-hover: translateY(-2px);
     --transform-button-active: translateY(0);
 
-    /* type treatment */
-    --button-text-transform: uppercase;
+    /* treatments */
+    --text-transform-button: uppercase;
+    --text-transform-content-heading: uppercase;
+    --text-decoration-link: none;
+    --text-decoration-link-hover: none;
+    --list-style-features-list: none;
+    --list-style-resources-list: none;
 
     /* focus */
-    --outline-focus: 2px solid var(--color-golden-yellow);
+    --outline-focus: 2px solid var(--color-red-orange);
+
+    /* spacing */
+    --margin-header-wrapper: 0;
+    --margin-left-title-word-1: min(var(--space-lg), 8vw);
+    --margin-left-title-word-2: min(var(--space-xxl), 20vw);
+    --margin-left-right-content: var(--space-xl);
+    --margin-content-heading: var(--space-xs) 0;
+    --padding-header-wrapper: var(--space-xl) var(--space-lg) var(--space-md);
+    --padding-title-word: var(--space-sm);
+    --padding-overview-wrapper: var(--space-md);
+    --padding-features-wrapper: var(--space-sm);
+    --padding-resources-wrapper: var(--space-sm);
+
+    /* orientation */
+    --flex-direction-site-title: column;
+    --flex-direction-header-wrapper: row;
 }
