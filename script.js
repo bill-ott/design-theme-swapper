@@ -69,36 +69,38 @@ const themeContent = {
     },
     brutalism: {
         name: 'Brutalism',
-        overview: `Frutiger Aero is the optimistic tech aesthetic of roughly 2004 to 2013.
-            Remember when everything on the web looked glossy and glassy? Think that.
-            It's what Windows Vista desktop images and Nintendo DS or Wii marketing might fall under.
-            It runs on the idea that technology was going to be clean and friendly and integrated with nature somehow.
-            The name is a portmanteau of Adrian Frutiger, the designer behind several typefaces used throughout the era, and Windows' glassy "Aero" interface.
-            This style has enjoyed a bit of a nostalgic revival lately.`,
+        overview: `Brutalism in web design is a style that embraces rawness.
+            Brutalist websites exude utilitarianism and aim to provide information with zero frills.
+            The aesthetic itself seems to really celebrate HTML (if that makes sense).
+            The name 'Brutalism' comes from the utilitarian, no frills architecture style of the same name. 
+            The most famous example of this style is probably Craiglist, the inspriation for what you're seeing here.
+            'Neobrutalism,' a derivative design style, shares same ethos, but executes it in a very different way.`,
         features: [
             {
-                title: 'Bright, naturey imagery',
-                description: `Natural elements and a palette that might include lime green, sky blue, and/or crisp white.
-                    White beaches, grassy hills overlooking skyscrapers, a macro shot of some leaves.
-                    There are maybe giant bubbles floating by for some reason.`
+                title: 'Function over form',
+                description: `The 'no frills' aesthetic often results in lots of whitespace and simple color palettes. 
+                    This is executed intentionally to allow users to simply get the information they need.
+                    Restraint, in a word.`
             },
             {
-                title: 'Glassy textures',
-                description: `Heavy use of water and glass-like elements.
-                    Not misty, but rather clear and reflective.
-                    A "dewy" vibe.
-                    Rounded edges on elements invoke water droplets and bubbles.`
+                title: 'Predictable behavior',
+                description: `HTML elements do what you'd expect. Links look like links and buttons look like buttons.
+                    Brutalism rejects the notion the design needs to override the default styling for each element.
+                    You'll likely see bullets in semantics lists, just like you do in this one.`
             },
             {
-                title: 'Open and airy',
-                description: `Minimal composition with little crowding of various elements.
-                    Perhaps so the viewer can enjoy a beautiful background image photo, such as this one of some Japanese maple leaves, which I took a few years ago.`
+                title: 'Orderly layouts',
+                description: `Information is presented in a logical, orderly way.
+                    You may find generous usage of 'display: grid' in the css.
+                    A brutalist blog, for example, might simply list all of the posts in a list (Hacker News is an excellent example).`
             },
         ],
         resources: [
-            { label: 'Frutiger Aero Wikipedia entry', url: 'https://en.wikipedia.org/wiki/Frutiger_Aero' },
-            { label: 'Frutiger Aero Aesthetic', url: 'https://frutiger-aero.org/frutiger-aero' },
-            { label: 'The Frutiger Aero Archive', url: 'https://frutigeraeroarchive.org/' },
+            { label: 'What is Brutalism in Web Design?', url: 'https://gradientshub.com/blog/what-is-brutalism-in-web-design/' },
+            { label: 'Brutalist architecture Wikipedia entry', url: 'https://en.wikipedia.org/wiki/Brutalist_architecture' },
+            { label: 'Brutalism vs. Neobrutalism', url: 'https://www.cccreative.design/blogs/brutalism-vs-neubrutalism-in-ui-design#toc-1' },
+            { label: 'Craigslist', url: 'https://www.craigslist.org' },
+            { label: 'Hacker News', url: 'https://news.ycombinator.com/' },
         ],
     },
     // neobrutalism: { /* same shape */ },
