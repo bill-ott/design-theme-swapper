@@ -16,6 +16,7 @@
     --font-size-xs: 0.64rem;
 
     /* spacing */
+    --space-xxs: 0.2rem;
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 2rem;
@@ -37,6 +38,7 @@ body {
     background-color: var(--color-bg-body);
     display: flex;
     flex-direction: column;
+    text-transform: var(--text-transform-body);
 }
 .header-section {
     display: flex;
@@ -58,13 +60,14 @@ body {
     box-shadow: var(--shadow-header-wrapper);
 }
 .site-header {
-    display: flex;
+    display: var(--display-site-header);
     flex-direction: var(--flex-direction-site-header);
     background-color: var(--color-bg-site-header);
     width: var(--width-site-header);
+    padding: var(--padding-site-header);
 }
 .site-title {
-    display: flex;
+    display: var(--display-site-title);
     flex-direction: var(--flex-direction-site-title);
     flex-wrap: wrap;
     align-items: flex-start;
@@ -92,6 +95,7 @@ body {
     color: var(--color-text-author);
     background-color: var(--color-bg-author);
     border-radius: var(--radius-author);
+    display: var(--display-author);
 }
 .right-content {
     width: 100%;
@@ -107,7 +111,7 @@ body {
     display: grid;
     grid-template-columns: var(--grid-template-columns-button-container);
     gap: var(--space-xs);
-    margin-top: var(--space-md);
+    margin-top: var(--margin-top-button-container);
 }
 .swapper-button {
     padding: var(--padding-button);
@@ -173,6 +177,8 @@ body {
     font-size: var(--font-size-content-heading);
     text-transform: var(--text-transform-content-heading);
     margin: var(--margin-content-heading);
+    padding: var(--padding-content-heading);
+    background-color: var(--color-bg-content-heading);
 }
 .overview {
     font-size: var(--font-size-overview);
@@ -202,6 +208,8 @@ body {
     font-size: var(--font-size-content-heading);
     text-transform: var(--text-transform-content-heading);
     margin: var(--margin-content-heading);
+    padding: var(--padding-content-heading);
+    background-color: var(--color-bg-content-heading);
 }
 .features-list {
     display: grid;
@@ -253,6 +261,8 @@ body {
     font-size: var(--font-size-content-heading);
     text-transform: var(--text-transform-content-heading);
     margin: var(--margin-content-heading);
+    padding: var(--padding-content-heading);
+    background-color: var(--color-bg-content-heading);
 }
 .further-reading {
     font-size: var(--font-size-resources);

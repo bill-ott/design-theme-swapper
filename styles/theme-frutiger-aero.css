@@ -112,6 +112,7 @@
     --margin-content-heading: var(--space-xs) 0;
     --margin-author: var(--space-sm) 0 0 auto;
     --margin-top-title-word: var(--space-xs);
+    --margin-top-button-container: var(--space-md);
     --padding-header-wrapper: var(--space-md);
     --padding-title-word: 0 var(--space-xs);
     --padding-author: var(--space-xs) var(--space-sm);
@@ -124,4 +125,6 @@
     /* orientation */
     --flex-direction-header-wrapper: column;
     --flex-direction-site-header: column;
+    --display-site-header: flex;
+    --display-site-title: flex;
 }
