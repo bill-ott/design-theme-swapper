@@ -42,9 +42,10 @@
 
     /* spacing */
     --margin-header-wrapper: var(--space-sm) 0 0;
-    --margin-content-heading: var(--space-sm) 0;
+    --margin-features-list: var(--space-sm) 0 0;
     --padding-header-wrapper: var(--space-sm);
-    --padding-content: var(--space-sm);
+    --margin-content-heading: var(--space-xs) 0 0 0;
+    --padding-content: 0 var(--space-sm);
     --padding-site-header: var(--space-xxs);
     --padding-content-heading: var(--space-xxs);
     --padding-button: var(--space-xxs);

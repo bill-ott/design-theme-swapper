@@ -94,12 +94,14 @@
     --margin-top-title-word: var(--space-xs);
     --margin-top-button-container: var(--space-md);
     --margin-author: var(--space-sm) 0 0 auto;
+    --margin-features-item: var(--space-sm);
     --padding-header-wrapper: var(--space-xl) var(--space-lg) var(--space-md);
     --padding-title-word: var(--space-sm);
     --padding-author: var(--space-xs) var(--space-sm);
     --padding-button: var(--space-sm) var(--space-md);
     --padding-overview-wrapper: var(--space-md);
     --padding-features-wrapper: var(--space-sm);
+    --padding-features-item: var(--space-sm);
     --padding-resources-wrapper: var(--space-sm);
 
     /* orientation */
@@ -108,4 +110,5 @@
     --flex-direction-site-header: column;
     --flex-direction-site-title: column;
     --flex-direction-header-wrapper: row;
+    --text-align-features-card: center;
 }

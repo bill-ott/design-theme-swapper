@@ -111,6 +111,7 @@
     --margin-content: var(--space-sm) 0 0;
     --margin-content-heading: var(--space-xs) 0;
     --margin-author: var(--space-sm) 0 0 auto;
+    --margin-features-item: var(--space-sm);
     --margin-top-title-word: var(--space-xs);
     --margin-top-button-container: var(--space-md);
     --padding-header-wrapper: var(--space-md);
@@ -118,13 +119,16 @@
     --padding-author: var(--space-xs) var(--space-sm);
     --padding-button: var(--space-sm) var(--space-md);
     --padding-content: var(--space-sm);
+    --padding-features-item: var(--space-sm);
     --padding-overview-wrapper: var(--space-sm);
     --padding-features-wrapper: var(--space-sm);
     --padding-resources-wrapper: var(--space-sm) var(--space-sm) calc(var(--space-sm) * 2);
+    --padding-resources-list: 0 0 0 var(--space-md);
 
     /* orientation */
     --flex-direction-header-wrapper: column;
     --flex-direction-site-header: column;
     --display-site-header: flex;
     --display-site-title: flex;
+    --text-align-features-card: center;
 }
