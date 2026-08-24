@@ -58,19 +58,54 @@ const themeContent = {
             {
                 title: 'Open and airy',
                 description: `Minimal composition with little crowding of various elements.
-                    Perhaps so the viewer can enjoy a beautiful background image.`
+                    Perhaps so the viewer can enjoy a beautiful background image photo, such as this one of some Japanese maple leaves, which I took a few years ago.`
             },
         ],
         resources: [
             { label: '→ Frutiger Aero Wikipedia entry', url: 'https://en.wikipedia.org/wiki/Frutiger_Aero' },
+            { label: '→ Frutiger Aero Aesthetic', url: 'https://frutiger-aero.org/frutiger-aero' },
             { label: '→ The Frutiger Aero Archive', url: 'https://frutigeraeroarchive.org/' },
-            { label: '→ Frutiger Aero design aesthetic directory', url: 'https://frutiger-aero.neocities.org/' },
         ],
     },
+    brutalism: {
+        name: 'Brutalism',
+        overview: `Brutalism in web design is a style that embraces rawness.
+            Brutalist websites exude utilitarianism and aim to provide information with zero frills.
+            The aesthetic itself seems to really celebrate HTML (if that makes sense).
+            The name 'Brutalism' comes from the utilitarian, no frills architecture style of the same name. 
+            The most famous example of this style is probably Craiglist, the inspriation for what you're seeing here.
+            'Neobrutalism,' a derivative design style, shares same ethos, but executes it in a very different way.`,
+        features: [
+            {
+                title: 'Function over form',
+                description: `The 'no frills' aesthetic often results in lots of whitespace and simple color palettes. 
+                    This is executed intentionally to allow users to simply get the information they need.
+                    Restraint, in a word.`
+            },
+            {
+                title: 'Predictable behavior',
+                description: `HTML elements do what you'd expect. Links look like links and buttons look like buttons.
+                    Brutalism rejects the notion the design needs to override the default styling for each element.
+                    You'll likely see bullets in semantics lists, just like you do in this one.`
+            },
+            {
+                title: 'Orderly layouts',
+                description: `Information is presented in a logical, orderly way.
+                    You may find generous usage of 'display: grid' in the css.
+                    A brutalist blog, for example, might simply list all of the posts in a list (Hacker News is an excellent example).`
+            },
+        ],
+        resources: [
+            { label: 'What is Brutalism in Web Design?', url: 'https://gradientshub.com/blog/what-is-brutalism-in-web-design/' },
+            { label: 'Brutalist architecture Wikipedia entry', url: 'https://en.wikipedia.org/wiki/Brutalist_architecture' },
+            { label: 'Brutalism vs. Neobrutalism', url: 'https://www.cccreative.design/blogs/brutalism-vs-neubrutalism-in-ui-design#toc-1' },
+            { label: 'Craigslist', url: 'https://www.craigslist.org' },
+            { label: 'Hacker News', url: 'https://news.ycombinator.com/' },
+        ],
+    },
+    // neobrutalism: { /* same shape */ },
     // skeuomorphism: { /* same shape */ },
-    // brutalism: { /* same shape */ },
     // 'early-web': { /* same shape */ },
-    // '8bit': { /* same shape */ },
 };
 
 function renderContent(theme) {

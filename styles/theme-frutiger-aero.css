@@ -12,9 +12,9 @@
     --font-size-button: var(--font-size-h6);
     --font-size-content-heading: var(--font-size-h4);
     --font-size-resources-link: var(--font-size-h6);
+    --font-size-explainer: clamp(var(--font-size-h6), 3vw, var(--font-size-h5));
 
     /* raw palette */
-    --color-lime: #9fe11d;
     --color-lime-light: #d3eca1;
     --color-lime: #9fe11d;
     --color-lime-dark: #354b0abf;
@@ -77,7 +77,9 @@
     --max-width-features-content: var(--max-width-content-narrow);
     --max-width-resources-content: var(--max-width-content-narrow);
     --max-width-features-card: 25rem;
-    --aspect-ratio-features-card: calc(1 / 1);
+    --min-height-features-item: 16rem;
+    --grid-template-columns-button-container: repeat(auto-fit, minmax(13.7rem, 1fr));
+    --grid-template-columns-features-list: repeat(auto-fit, minmax(15rem, 1fr));
 
     /* depth */
     --shadow-tile: 0 2px 3px rgba(0, 0, 0, 0.18), 0 8px 12px rgba(0, 0, 0, 0.22), 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -94,6 +96,7 @@
     /* motion */
     --transform-button-hover: translateX(-2px);
     --transform-button-active: translateX(-1px);
+    --transition-button: box-shadow 0.15s ease, transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 
     /* treatments */
     --list-style-features-list: none;
@@ -108,13 +111,26 @@
     --margin-header-wrapper: calc(var(--space-sm) * 2) var(--space-sm) var(--space-sm);
     --margin-content: var(--space-sm) 0 0;
     --margin-content-heading: var(--space-xs) 0;
+    --margin-author: var(--space-sm) 0 0 auto;
+    --margin-features-item: var(--space-sm);
+    --margin-top-title-word: var(--space-xs);
+    --margin-top-button-container: var(--space-md);
     --padding-header-wrapper: var(--space-md);
     --padding-title-word: 0 var(--space-xs);
+    --padding-author: var(--space-xs) var(--space-sm);
+    --padding-button: var(--space-sm) var(--space-md);
     --padding-content: var(--space-sm);
+    --padding-features-item: var(--space-sm);
     --padding-overview-wrapper: var(--space-sm);
     --padding-features-wrapper: var(--space-sm);
     --padding-resources-wrapper: var(--space-sm) var(--space-sm) calc(var(--space-sm) * 2);
+    --padding-resources-list: 0 0 0 var(--space-md);
 
     /* orientation */
     --flex-direction-header-wrapper: column;
+    --flex-direction-site-header: column;
+    --display-site-header: flex;
+    --display-site-title: flex;
+    --display-features-list: grid;
+    --text-align-features-card: center;
 }
