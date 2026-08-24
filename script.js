@@ -96,9 +96,9 @@ const themeContent = {
             },
         ],
         resources: [
-            { label: '→ Frutiger Aero Wikipedia entry', url: 'https://en.wikipedia.org/wiki/Frutiger_Aero' },
-            { label: '→ Frutiger Aero Aesthetic', url: 'https://frutiger-aero.org/frutiger-aero' },
-            { label: '→ The Frutiger Aero Archive', url: 'https://frutigeraeroarchive.org/' },
+            { label: 'Frutiger Aero Wikipedia entry', url: 'https://en.wikipedia.org/wiki/Frutiger_Aero' },
+            { label: 'Frutiger Aero Aesthetic', url: 'https://frutiger-aero.org/frutiger-aero' },
+            { label: 'The Frutiger Aero Archive', url: 'https://frutigeraeroarchive.org/' },
         ],
     },
     // neobrutalism: { /* same shape */ },

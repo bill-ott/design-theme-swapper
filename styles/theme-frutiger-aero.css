@@ -77,8 +77,9 @@
     --max-width-features-content: var(--max-width-content-narrow);
     --max-width-resources-content: var(--max-width-content-narrow);
     --max-width-features-card: 25rem;
-    --aspect-ratio-features-card: calc(1 / 1);
-    --grid-template-columns-button-container: repeat(auto-fit, minmax(15rem, 1fr));
+    --min-height-features-item: 16rem;
+    --grid-template-columns-button-container: repeat(auto-fit, minmax(13.7rem, 1fr));
+    --grid-template-columns-features-list: repeat(auto-fit, minmax(15rem, 1fr));
 
     /* depth */
     --shadow-tile: 0 2px 3px rgba(0, 0, 0, 0.18), 0 8px 12px rgba(0, 0, 0, 0.22), 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -130,5 +131,6 @@
     --flex-direction-site-header: column;
     --display-site-header: flex;
     --display-site-title: flex;
+    --display-features-list: grid;
     --text-align-features-card: center;
 }

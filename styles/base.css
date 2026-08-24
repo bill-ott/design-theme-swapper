@@ -49,6 +49,7 @@ body {
 }
 .header-wrapper {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: var(--flex-direction-header-wrapper);
     justify-content: center;
     align-items: center;
@@ -97,11 +98,11 @@ body {
     border-radius: var(--radius-author);
     display: var(--display-author);
 }
-.right-content {
+.intro-content {
     width: 100%;
-    max-width: var(--max-width-right-content);
+    max-width: var(--max-width-intro-content);
     min-width: 0;
-    margin-left: var(--margin-left-right-content);
+    padding: var(--padding-intro-content);
 }
 .explainer {
     font-size: var(--font-size-explainer);
@@ -212,15 +213,14 @@ body {
     background-color: var(--color-bg-content-heading);
 }
 .features-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: var(--display-features-list);
+    grid-template-columns: var(--grid-template-columns-features-list);
+    grid-auto-rows: 1fr;
     gap: var(--space-sm);
-    align-items: center;
     justify-items: center;
     list-style-type: var(--list-style-features-list);
     padding: var(--padding-features-list);
     margin: var(--margin-features-list);
-    align-items: start;
 }
 .features-item {
     width: 100%;
@@ -228,10 +228,10 @@ body {
     background: var(--color-bg-features-card);
     border-radius: var(--radius-features-card);
     box-shadow: var(--shadow-features-card);
-    aspect-ratio: var(--aspect-ratio-features-card);
     text-align: var(--text-align-features-card);
     margin: var(--margin-features-item);
     padding: var(--padding-features-item);
+    min-height: var(--min-height-features-item);
 }
 .features-item-title {
     font-size: var(--font-size-features-item-title);
@@ -271,6 +271,7 @@ body {
 .resources-list {
     list-style-type: var(--list-style-resources-list);
     padding: var(--padding-resources-list);
+    margin: var(--margin-resources-list);
 }
 .resources-link {
     color: var(--color-text-link);
@@ -280,16 +281,4 @@ body {
 .resources-link:hover {
     color: var(--color-text-link-hover);
     text-decoration: var(--text-decoration-link-hover);
-}
-@media (max-width: 68rem) { /* stack layout */
-    .header-wrapper {
-        flex-direction: column;
-        padding-top: var(--space-md);
-    }
-    .right-content {
-        margin-left: 0;
-    }
-    .features-list {
-        grid-template-columns: 1fr;
-    }
 }

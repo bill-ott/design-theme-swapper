@@ -44,7 +44,7 @@
 
     /* shape */
     --max-width-header-wrapper: var(--max-width-content);
-    --max-width-right-content: 40rem;
+    --max-width-intro-content: 40rem;
     --min-height-features-card: 16rem;
     --min-height-section-header: 36rem;
     --min-height-section-overview: 30rem;
@@ -54,13 +54,14 @@
     --max-width-overview-content: var(--max-width-content);
     --max-width-features-content: var(--max-width-content);
     --max-width-resources-content: var(--max-width-content);
+    --min-height-features-item: 16rem;
     --radius-title-word: 1.25rem;
     --radius-author: 1.25rem;
     --radius-button: 3rem;
     --radius-features-card: 1.25rem;
     --border-button: none;
-    --aspect-ratio-features-card: calc(1 / .6);
     --grid-template-columns-button-container: repeat(auto-fit, minmax(15rem, 1fr));
+    --grid-template-columns-features-list: repeat(auto-fit, minmax(15rem, 1fr));
 
     /* depth */
     --shadow-title: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -89,13 +90,14 @@
     --margin-header-wrapper: 0;
     --margin-left-title-word-1: min(var(--space-lg), 8vw);
     --margin-left-title-word-2: min(var(--space-xxl), 20vw);
-    --margin-left-right-content: var(--space-xl);
+    --margin-left-intro-content: var(--space-xl);
     --margin-content-heading: var(--space-xs) 0;
     --margin-top-title-word: var(--space-xs);
     --margin-top-button-container: var(--space-md);
     --margin-author: var(--space-sm) 0 0 auto;
     --margin-features-item: var(--space-sm);
-    --padding-header-wrapper: var(--space-xl) var(--space-lg) var(--space-md);
+    --padding-intro-content: 0 var(--space-md);
+    --padding-header-wrapper: var(--space-md);
     --padding-title-word: var(--space-sm);
     --padding-author: var(--space-xs) var(--space-sm);
     --padding-button: var(--space-sm) var(--space-md);
@@ -107,6 +109,7 @@
     /* orientation */
     --display-site-header: flex;
     --display-site-title: flex;
+    --display-features-list: grid;
     --flex-direction-site-header: column;
     --flex-direction-site-title: column;
     --flex-direction-header-wrapper: row;
