@@ -10,12 +10,12 @@ A single-page site built to demonstrate range across six web design eras, switch
  
 ## Themes
  
-- **Default** — saturated primaries, pill shapes, staggered type, soft layered shadows
 - **Frutiger Aero** — glossy, glass, chrome-and-sky-blue mid-2000s optimism
-- **Skeuomorphism** — real-world texture and depth cues
 - **Brutalism** — raw, unstyled, high-contrast
+- **Neobrutalism** — Brutalism's chaotic younger sibling
+- **Skeuomorphism** — real-world texture and depth cues
 - **Early Web** — Geocities-era vibe
-- **8-bit** — pixel-grid, limited palette, retro game UI
+- **Default** — saturated primaries, pill shapes, staggered type, soft layered shadows (the style I prefer)
 ## Tech stack
  
 Plain HTML, CSS, and JavaScript (no framework, no build step).
