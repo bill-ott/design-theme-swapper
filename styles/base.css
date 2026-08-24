@@ -2,6 +2,7 @@
     /* element sizing */
     --max-width-content: 90rem;
     --max-width-content-narrow: 60rem;
+    --max-width-content-wide: 110rem;
 
     /* font sizes (based on Major Third scale) */
     --font-size-h1: 3.815rem;
@@ -58,7 +59,9 @@ body {
 }
 .site-header {
     display: flex;
-    flex-direction: column;
+    flex-direction: var(--flex-direction-site-header);
+    background-color: var(--color-bg-site-header);
+    width: var(--width-site-header);
 }
 .site-title {
     display: flex;
@@ -72,7 +75,7 @@ body {
 }
 .title-word {
     padding: var(--padding-title-word);
-    margin-top: var(--space-xs);
+    margin-top: var(--margin-top-title-word);
     background-color: var(--color-bg-title);
     border-radius: var(--radius-title-word);
     box-shadow: var(--shadow-title);
@@ -84,8 +87,8 @@ body {
     margin-left: var(--margin-left-title-word-2);
 }
 .author {
-    margin: var(--space-sm) 0 0 auto;
-    padding: var(--space-xs) var(--space-sm);
+    margin: var(--margin-author);
+    padding: var(--padding-author);
     color: var(--color-text-author);
     background-color: var(--color-bg-author);
     border-radius: var(--radius-author);
@@ -97,17 +100,17 @@ body {
     margin-left: var(--margin-left-right-content);
 }
 .explainer {
-    font-size: clamp(var(--font-size-h6), 3vw, var(--font-size-h5));
+    font-size: var(--font-size-explainer);
     color: var(--color-text-explainer);
 }
 .swapper-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: var(--grid-template-columns-button-container);
     gap: var(--space-xs);
     margin-top: var(--space-md);
 }
 .swapper-button {
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--padding-button);
     font-size: var(--font-size-button);
     text-transform: var(--text-transform-button);
     white-space: nowrap;
@@ -117,7 +120,7 @@ body {
     border-radius: var(--radius-button);
     box-shadow: var(--shadow-button);
     cursor: pointer;
-    transition: box-shadow 0.15s ease, transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+    transition: var(--transition-button);
 }
 .swapper-button:not(:disabled):hover {
     color: var(--color-text-button-hover);
@@ -275,11 +278,6 @@ body {
         margin-left: 0;
     }
     .features-list {
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 30rem) { /* stack buttons in grid */
-    .swapper-container {
         grid-template-columns: 1fr;
     }
 }

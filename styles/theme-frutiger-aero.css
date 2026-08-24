@@ -12,6 +12,7 @@
     --font-size-button: var(--font-size-h6);
     --font-size-content-heading: var(--font-size-h4);
     --font-size-resources-link: var(--font-size-h6);
+    --font-size-explainer: clamp(var(--font-size-h6), 3vw, var(--font-size-h5));
 
     /* raw palette */
     --color-lime-light: #d3eca1;
@@ -77,6 +78,7 @@
     --max-width-resources-content: var(--max-width-content-narrow);
     --max-width-features-card: 25rem;
     --aspect-ratio-features-card: calc(1 / 1);
+    --grid-template-columns-button-container: repeat(auto-fit, minmax(15rem, 1fr));
 
     /* depth */
     --shadow-tile: 0 2px 3px rgba(0, 0, 0, 0.18), 0 8px 12px rgba(0, 0, 0, 0.22), 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -93,6 +95,7 @@
     /* motion */
     --transform-button-hover: translateX(-2px);
     --transform-button-active: translateX(-1px);
+    --transition-button: box-shadow 0.15s ease, transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 
     /* treatments */
     --list-style-features-list: none;
@@ -107,8 +110,12 @@
     --margin-header-wrapper: calc(var(--space-sm) * 2) var(--space-sm) var(--space-sm);
     --margin-content: var(--space-sm) 0 0;
     --margin-content-heading: var(--space-xs) 0;
+    --margin-author: var(--space-sm) 0 0 auto;
+    --margin-top-title-word: var(--space-xs);
     --padding-header-wrapper: var(--space-md);
     --padding-title-word: 0 var(--space-xs);
+    --padding-author: var(--space-xs) var(--space-sm);
+    --padding-button: var(--space-sm) var(--space-md);
     --padding-content: var(--space-sm);
     --padding-overview-wrapper: var(--space-sm);
     --padding-features-wrapper: var(--space-sm);
@@ -116,4 +123,5 @@
 
     /* orientation */
     --flex-direction-header-wrapper: column;
+    --flex-direction-site-header: column;
 }

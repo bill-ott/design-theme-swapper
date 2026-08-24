@@ -1,0 +1,58 @@
+[data-theme="brutalism"] {    
+    /* font */
+    --font-family: Verdana, Geneva, sans-serif;
+
+    /* raw palette */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #eeeeee;
+    --color-gray-dark: #cccccc;
+    --color-blue: #0000ee;
+
+    /* semantic color */
+    --color-bg-body: var(--color-white);
+    --color-text-body: var(--color-black);
+    --color-bg-site-header: var(--color-gray);
+    --color-bg-button-hover: var(--color-gray-dark);
+    --color-text-button: var(--color-blue);
+    --color-bg-features-card: var(---color-gray);
+    --color-text-link: var(--color-blue);
+    --color-text-link-hover: color-mix(in srgb, var(--color-text-link) 65%, transparent);
+
+    /* shape */
+    --border-button: 1px solid var(--color-gray-dark);
+    --width-site-header: 100%;
+    --max-width-header-wrapper: var(--max-width-content-wide);
+    --max-width-overview-content: var(--max-width-content-wide);
+    --max-width-features-content: var(--max-width-content-wide);
+    --max-width-resources-content: var(--max-width-content-wide);
+    --max-width-features-card: 25rem;
+    --aspect-ratio-features-card: calc(1 / 1);
+    --grid-template-columns-button-container: repeat(auto-fit, minmax(7rem, 1fr));
+
+    /* treatments */
+    --list-style-features-list: none;
+    --list-style-resources-list: none;
+    --text-decoration-link: none;
+    --text-decoration-link-hover: none;
+
+    /* focus */
+    --outline-focus: 2px solid var(--color-lime);
+
+    /* spacing */
+    --margin-header-wrapper: calc(var(--space-sm) * 2) var(--space-sm) var(--space-sm);
+    --margin-content: var(--space-sm) 0 0;
+    --margin-content-heading: var(--space-xs) 0;
+    --margin-author: 0;
+    --margin-top-title-word: 0;
+    --padding-title-word: 0 1ch 0 0;
+    --padding-author: 0;
+    --padding-button: 0;
+    --padding-overview-wrapper: var(--space-sm);
+    --padding-features-wrapper: var(--space-sm);
+    --padding-resources-wrapper: var(--space-sm) var(--space-sm) calc(var(--space-sm) * 2);
+
+    /* orientation */
+    --flex-direction-header-wrapper: column;
+    --flex-direction-site-header: row;
+}

@@ -3,6 +3,7 @@
     --font-family: Avenir, "Avenir Next", sans-serif;
     --font-size-site-title: clamp(var(--font-size-h5), 12vw, var(--font-size-h1));
     --font-size-content-heading: clamp(var(--font-size-h5), 8vw, var(--font-size-h3));
+    --font-size-explainer: clamp(var(--font-size-h6), 3vw, var(--font-size-h5));
     --font-size-button: var(--font-size-p);
     --font-size-features-item-title: var(--font-size-h6);
     --font-size-overview: var(--font-size-h6);
@@ -59,6 +60,7 @@
     --radius-features-card: 1.25rem;
     --border-button: none;
     --aspect-ratio-features-card: calc(1 / .6);
+    --grid-template-columns-button-container: repeat(auto-fit, minmax(15rem, 1fr));
 
     /* depth */
     --shadow-title: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -70,6 +72,7 @@
     /* motion */
     --transform-button-hover: translateY(-2px);
     --transform-button-active: translateY(0);
+    --transition-button: box-shadow 0.15s ease, transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 
     /* treatments */
     --text-transform-button: uppercase;
@@ -88,13 +91,18 @@
     --margin-left-title-word-2: min(var(--space-xxl), 20vw);
     --margin-left-right-content: var(--space-xl);
     --margin-content-heading: var(--space-xs) 0;
+    --margin-top-title-word: var(--space-xs);
+    --margin-author: var(--space-sm) 0 0 auto;
     --padding-header-wrapper: var(--space-xl) var(--space-lg) var(--space-md);
     --padding-title-word: var(--space-sm);
+    --padding-author: var(--space-xs) var(--space-sm);
+    --padding-button: var(--space-sm) var(--space-md);
     --padding-overview-wrapper: var(--space-md);
     --padding-features-wrapper: var(--space-sm);
     --padding-resources-wrapper: var(--space-sm);
 
     /* orientation */
+    --flex-direction-site-header: column;
     --flex-direction-site-title: column;
     --flex-direction-header-wrapper: row;
 }
